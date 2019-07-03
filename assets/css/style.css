@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap:300,400,500,600,700');
+
+html,body {
+	height:100vh;
+    background:center no-repeat fixed url("assets/media/author desk large.png");
+    background-size: cover;
+    color:#444;
+    font-family: 'Amatic+SC', sans-serif;
+}
+
