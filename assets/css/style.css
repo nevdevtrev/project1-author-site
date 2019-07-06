@@ -34,3 +34,9 @@
 
 }
 
+.footer {
+    border: 2px solid blue;
+    border-color: red;
+    width:100%;
+     background-color: yellow; 
+}
