@@ -1,42 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap:300,400,500,600,700');
-
-/*html,body {
-	height:100vh;
-    background:center no-repeat fixed url("assets/media/author desk large.png");
-    background-size: cover;
-    color:#444;
-    font-family: 'Amatic+SC', sans-serif;
-}
-*/
-.opaque-overlay {
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    margin-bottom: -104px; 
-    z-index: 1; 
-}
-
-.deskview {
-    height: 100vh;
-    position: relative;
-    background: url("assets/media/author desk large.png") no-repeat bottom right fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.footer {
-    border: 2px solid blue;
-    border-color: red;
-    width:100%;
-     background-color: yellow; 
+body {
+  background-image: url("assets/media/darkeness with feather.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
 }
