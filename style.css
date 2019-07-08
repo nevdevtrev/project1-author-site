@@ -1,7 +1,8 @@
        body {
          margin: 0px 0px;
          height: 100vh;
-         background: url("darkeness with feather.jpg") no-repeat center center fixed;
+         background-repeat: no-repeat, repeat;
+         background: url("assets/media/darkeness with feather.jpg"), url('https://media.giphy.com/media/3rgXBLTr8N4TuoLFGE/source.gif') no-repeat center center fixed;
          position: relative;
          -webkit-background-size: cover;
          -moz-background-size: cover;
@@ -10,10 +11,11 @@
          display: flex;
          align-items: center;
          justify-content: center;
+         background-blend-mode: multiply;
 
        }
 
-       .first-container {
+/*       .background {
          height: 100vh;
          background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
          position: relative;
@@ -24,5 +26,16 @@
          display: flex;
          align-items: center;
          justify-content: center;
+         mix-blend-mode: multiply;
        }
-       
+.bg {
+  /* CREDITS TO THE OWNER OF THIS GIF I FOUND FROM A GOOGLE SEARCH */
+/*  background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
+  background-size: cover;
+   width: 100vw;
+}*/
+*/
+/*body img {*/
+/*  width: 100%;*/
+/*  mix-blend-mode: multiply;*/
+/*}*/
