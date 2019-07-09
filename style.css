@@ -9,9 +9,12 @@
          -o-background-size: cover;
          background-size: cover;
          display: flex;
-         align-items: center;
+         align-items: cover;
          justify-content: center;
-         background-blend-mode: multiply;
+         font-family: 'Amatic SC', cursive;
+         color: rgba(255,255,255,0.9);
+
+      /*   background-blend-mode: multiply;*/
 
        }
 
@@ -39,3 +42,21 @@
 /*  width: 100%;*/
 /*  mix-blend-mode: multiply;*/
 /*}*/
+
+/*.navbar-tailored {
+    background-color: #111111;
+}*/
+/* change the brand and text color */
+/*.navbar-tailored .navbar-brand,
+.navbar-tailored .navbar-text {
+    color: rgba(128,255,255,.1);
+}*/
+/* change the link color */
+/*.navbar-tailored .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}*/
+/* change the color of active or hovered links */
+/*.navbar-tailored .nav-item.active .nav-link,
+.navbar-tailored .nav-item:hover .nav-link {
+    color: #ffffff;
+}*/
