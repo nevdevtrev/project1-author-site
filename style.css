@@ -1,24 +1,31 @@
        body {
-         margin: 0px 0px;
-         height: 100vh;
-         background-repeat: no-repeat, repeat;
-         background: url("assets/media/darkeness with feather.jpg"), url('https://media.giphy.com/media/3rgXBLTr8N4TuoLFGE/source.gif') no-repeat center center fixed;
-         position: relative;
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
-         display: flex;
-         align-items: cover;
-         justify-content: center;
-         font-family: 'Amatic SC', cursive;
-         color: rgba(255,255,255,0.9);
+           margin: 0px 0px;
+           height: 100vh;
+           background-repeat: no-repeat, repeat;
+           background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
+           position: relative;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+           display: flex;
+           align-items: cover;
+           justify-content: center;
+           font-family: 'Amatic SC', cursive;
 
-      /*   background-blend-mode: multiply;*/
-
+           /*   background-blend-mode: multiply;*/
        }
 
-/*       .background {
+       a.neville-sexton {
+           color: rgba(255, 255, 255, 1);
+           font-size: 80px;
+           position: absolute;
+           top: 65%;
+       
+           transform: translatey(-50%, -50%);
+       }
+
+       /*       .background {
          height: 100vh;
          background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
          position: relative;
@@ -33,30 +40,42 @@
        }
 .bg {
   /* CREDITS TO THE OWNER OF THIS GIF I FOUND FROM A GOOGLE SEARCH */
-/*  background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
+
+       /*  background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
   background-size: cover;
    width: 100vw;
 }*/
-*/
-/*body img {*/
-/*  width: 100%;*/
-/*  mix-blend-mode: multiply;*/
-/*}*/
 
-/*.navbar-tailored {
-    background-color: #111111;
-}*/
-/* change the brand and text color */
-/*.navbar-tailored .navbar-brand,
-.navbar-tailored .navbar-text {
-    color: rgba(128,255,255,.1);
-}*/
-/* change the link color */
-/*.navbar-tailored .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
-}*/
-/* change the color of active or hovered links */
-/*.navbar-tailored .nav-item.active .nav-link,
-.navbar-tailored .nav-item:hover .nav-link {
-    color: #ffffff;
-}*/
+       */
+       /*body img {*/
+
+       /*  width: 100%;*/
+
+       /*  mix-blend-mode: multiply;*/
+
+       /*}*/
+
+       .navbar-tailored {
+           background-color: rgba(0, 0, 0, 0.79);
+       }
+
+       /* change the navbar brand and text color */
+
+       .navbar-tailored .navbar-brand,
+       .navbar-tailored .navbar-text {
+           color: rgba(255, 255, 255, 1);
+       }
+
+       /* change the navbar link color */
+
+       .navbar-tailored .navbar-nav .nav-link {
+           color: rgba(255, 255, 255, .5);
+       }
+
+       /* change the color of active or hovered navbar links */
+
+       .navbar-tailored .nav-item.active .nav-link,
+       .navbar-tailored .nav-item:hover .nav-link {
+           color: #ffffff;
+       }
+       
