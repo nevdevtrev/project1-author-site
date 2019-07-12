@@ -7,7 +7,7 @@ body {
 
 .section1-backdrop {
     height: 100vh;
-    background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
+    background: url("assets/media/author desk large.png") no-repeat center center fixed;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -25,16 +25,16 @@ body {
     width: 100vw;
 }*/
 
-
-
 /* -- -----------------------------------------------------NAVBAR STUFF --*/
 
 .navbar-tailored {
-    background-color: rgba(255, 255, 255, 0.79);
+    background-color: rgba(0, 0, 0, 0.44);
 }
 
-.navbar-tailored {
-    background-color: rgba(255, 255, 255, 0.79);
+.navbar-tailored .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .6);
+    font-size: 2rem;
+    text-shadow: 0px 0px 20px black;
 }
 
 /* change the navbar brand and text color */
@@ -48,13 +48,14 @@ body {
 
 .navbar-tailored .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .5);
+
 }
 
 /* change the color of active or hovered navbar links */
 
 .navbar-tailored .nav-item.active .nav-link,
 .navbar-tailored .nav-item:hover .nav-link {
-    color: #ffffff;
+    color: #eeeeee;
 }
 
 
@@ -68,15 +69,15 @@ body {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
+
 }
 
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
-#SECTION1 {
+/*#section1 {
     margin: 0px 0px;
     height: 100vh;
-    background-repeat: no-repeat,
-    repeat;
+    background-repeat: no-repeat, repeat;
     background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
     position: relative;
     -webkit-background-size: cover;
@@ -86,7 +87,7 @@ body {
     display: flex;
     align-items: cover;
     justify-content: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', cursive;*/
 
     /*   background-blend-mode: multiply;*/
 }
@@ -113,3 +114,9 @@ body {
 /* -- ----------------------------------------------------- EMAIL MODAL --*/
 
 /* -- ----------------------------------------------------- COLOURS -----*/
+
+/* -- ----------------------------------------------------- TEXT--- -----*/
+
+.shadow {
+    text-shadow: 3px 2px white;
+}

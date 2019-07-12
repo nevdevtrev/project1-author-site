@@ -16,7 +16,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-----------------------------NAVBAR--------------------------------------------------->
+  <!-----------------------------NAVBAR--------------------------------------------------->
   <nav class="navbar navbar-expand-md navbar-tailored fixed-top">
     <a class="navbar-brand" href="#">
       <img src="assets/media/favicon-32x32.png" alt="Logo" style="width:40px;">
@@ -41,76 +41,105 @@
 
 
 
-<!-----------------------------JUMBOTRON + AUTHOR DETAILS------------------------------------------->
-<div class="container-fluid section1-backdrop">
- 
-  <div class="row">
-    <div class="col-12">
-      <div id="section1" class="jumbotron text-center">
-        <h1 class="jumbotron-large uppercase">Want my free novel?</h1>
-        <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Email</button></p>
-        <p class="text-muted"><small>Drop us your email and receive your free Neville Sexton book</small></p>
-        </section>
+  <!-----------------------------JUMBOTRON + AUTHOR DETAILS------------------------------------------->
+  <div class="container-fluid section1-backdrop">
+    <div class="row">
+      <div class="col-12">
+        <div id="section1" class="jumbotron jumbotron-tailored text-center">
+          <h1 class="jumbotron-large uppercase">Want your free novel?</h1>
+          <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">ADD YOUR EMAIL</button></p>
+          <p class="shadow"><small>Drop us your email and receive your free Neville Sexton book</small></p>
+          </section>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-6">
-      <div id="section2" class="container-fluid bg-warning">
-        <h1>Section 2</h1>
-        <p>TBA</p>
-        <p>TBA</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div id="section2" class="container-fluid bg-warning">
+          <h1>Section 2</h1>
+          <p>TBA</p>
+          <p>TBA</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div id="section3" class="container-fluid bg-secondary">
-        <h1>Section 3</h1>
-        <p>TBA</p>
-        <p>TBA</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div id="section3" class="container-fluid bg-secondary">
+          <h1>Section 3</h1>
+          <p>TBA</p>
+          <p>TBA</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-4">
-      <div id="section4" class="container-fluid bg-danger">
-        <h1>Section 4 </h1>
-        <p>TBA</p>
-        <p>TBA</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <div id="section4" class="container-fluid bg-danger">
+          <h1>Section 4 </h1>
+          <p>TBA</p>
+          <p>TBA</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div id="section5" class="container-fluid bg-info">
-        <h1>Section 5</h1>
-        <p>TBA</p>
-        <p>TBA</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div id="section5" class="container-fluid bg-info">
+          <h1>Section 5</h1>
+          <p>TBA</p>
+          <p>TBA</p>
+        </div>
+
       </div>
-
     </div>
   </div>
-</div>
 
+  <!-- Email Modal -->
+  <div class="modal" tabindex="-1" role="dialog" id="#signUpModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
 
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sign up for your free novel and to receive updates from Neville Sexton</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
 
-<footer>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
 
-</footer>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
 
 </body>
 
