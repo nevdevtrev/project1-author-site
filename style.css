@@ -27,11 +27,11 @@ body {
 
 /* -- -----------------------------------------------------NAVBAR STUFF --*/
 
-.navbar-tailored {
+.navbar-dark {
     background-color: rgba(0, 0, 0, 0.44);
 }
 
-.navbar-tailored .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .6);
     font-size: 2rem;
     text-shadow: 0px 0px 20px black;
@@ -39,27 +39,40 @@ body {
 
 /* change the navbar brand and text color */
 
-.navbar-tailored .navbar-brand,
-.navbar-tailored .navbar-text {
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-text {
     color: rgba(255, 255, 255, 1);
 }
 
 /* change the navbar link color */
 
-.navbar-tailored .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .5);
 
 }
 
 /* change the color of active or hovered navbar links */
 
-.navbar-tailored .nav-item.active .nav-link,
-.navbar-tailored .nav-item:hover .nav-link {
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
     color: #eeeeee;
 }
 
+/* change the navbar-toggler transparency level */
+
+.navbar-toggler {
+    background-color: rgba(0,0,0,0.5);
+}
 
 /* -- ----------------------------------------------------- JUMBOTRON ---*/
+.mailing-list {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 6%;
+    padding: 14px;
+    max-width: 66%;
+}
+
 
 .jumbotron {
     background-color: transparent;
