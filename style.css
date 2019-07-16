@@ -6,8 +6,10 @@ body {
 
 
 .section1-backdrop {
-    height: 100vh;
-    background: url("assets/media/author desk large.png") no-repeat center center fixed;
+    height: 84vh;
+    /* background: url("assets/media/author desk large.png") no-repeat center center fixed; */
+    background-image: url("assets/media/author desk large.png");
+    background-position: top 160px bottom 100px;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19,6 +21,32 @@ body {
     /*    mix-blend-mode: multiply;*/
 }
 
+
+.bg-black .row {
+    background: black;
+    padding-bottom: 100px;
+
+}
+.section1-backdrop .row {
+    padding-top: 97px;
+    /* Centre Mailing-list toast box  */
+}
+
+.section4-backdrop {
+    height: 100vh;
+    background: url("assets/media/CTBWL-kindle-non-transparent.png") no-repeat center center fixed;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*    mix-blend-mode: multiply;*/
+}
+
+
 /*.blendbg {
     background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
     background-size: cover;
@@ -29,6 +57,7 @@ body {
 
 .navbar {
     padding: 0px 10px;
+    height: 16vh;
 }
 
 .navbar-brand {
@@ -38,7 +67,7 @@ body {
 }
 
 .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.44);
+    background-color: rgba(0, 0, 0, 0.64);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -100,100 +129,86 @@ body {
 
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
-/*#section1 {
-    margin: 0px 0px;
+/*#section2 {
+    height: 74vh;
+}
+*/
+
+#section3 {
     height: 100vh;
-    background-repeat: no-repeat, repeat;
-    background: url("assets/media/darkeness with feather.jpg") no-repeat center center fixed;
+    background: black;
+    color:white;
+}
+
+#section3 > p {
+    margin:0;  /* To keep section 3 flush black with previous section */
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+    padding: 0;
+    background: black;
+}
+#section4 {
+    /*    height: 100vh;*/
     position: relative;
+    /*  background: url("assets/media/CTBWL-kindle-non-transparent.png") no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     display: flex;
-    align-items: cover;
+    align-items: center;
     justify-content: center;
-    font-family: 'Amatic SC', cursive;*/
-
-/*   background-blend-mode: multiply;*/
-
+    padding: 0;
 }
 
-/*#section1.a {
-    color: rgba(255, 255, 255, 1);
-    font-size: 60px;
-    position: absolute;
-    top: 65%;
-
-    transform: translatey(-50%, -50%);
-}*/
-
-#section2 {
-    height: 100vh;
-}
-
-#section3 {
-    height: 100vh;
-}
-
-#section4 {
-    height: 100vh;
+#section4 img {
+    height: 74vh;
 }
 
 #section5 {
-    height: 100vh;
+    height: 23vh;
 }
 
-/*-----------------------Footer Styling------------------------------------*/
-
-.footerstyle {
-    height: 20vh;
-    color:white;
+/*.spacer {
+    height: 16vh;
     background: black;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    align-items:center;
-    justify:    center;
-}
+    
+}*/
 
-.footerstyle a{
-    text-align:center;
-}
-.inline-list {
-    padding: 10px 5px;
-    display: inline
-}
+/* -- ----------------------------------------------------- Card section --*/
 
-.inline-list-item:not(:last-child) {
-    margin: 0;
-}
-
-.social-icons {
-    padding-bottom: 10px;
-}
-
-.social-icons li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 32px;
-    line-height: 7px;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    font-family: arial;
+    background-color: #721c24;
+    border-radius: 5.25rem;
 }
 
-.social-icons li a i:hover {
-    background: #e48610;
+.price {
+    color: grey;
+    font-size: 22px;
 }
 
-/* -- ----------------------------------------------------- EMAIL MODAL --*/
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
 
 /* -- ----------------------------------------------------- COLOURS -----*/
 
@@ -258,40 +273,61 @@ body {
 }
 
 
-/*-------------------------------------*/
+/*-----------------FOOTER styling--------------------*/
 
 footer {
     background-color: #000000;
     color: #fafafa;
-    min-height: 120px;
+    min-height: 100px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+Ul {
+    margin-bottom: 0;
+    /* to help centre footer icons */
 }
 
 
 
-.social-links {
-    padding-bottom: 15px;
-}
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
+    /* ---------------------------------------------------------*/
+    width: 48px;
+    /*                                                          */
+    height: 48px;
+    /*                                                          */
     padding: 12px 0;
+    /*                     Sets circular background for links   */
     border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
+    /*                                                          */
+    font-size: 22px;
+    /*                                                          */
+    line-height: 23px;
+    /*----------------------------------------------------------*/
     text-align: center;
     color: #ffffff;
-    background: #8f8f8f;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    background: #495057;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background: #ffffff;
+    background: #721c24;
 }
 
 #footer-details {
+    height: 10vh;
     padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 4px;
+    /* Keep (Copyright) balanced in footer */
+    margin-top: 14px;
 }

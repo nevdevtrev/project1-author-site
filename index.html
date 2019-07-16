@@ -19,7 +19,7 @@
 
   <!-----------------------------NAVBAR--------------------------------------------------->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="assets/media/authorpic.png" alt="Logo" style="width:100px;padding:0;">
   </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -28,18 +28,26 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Books</a>
+          <a class="nav-link" href="books.html">Books</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="blog.html">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Media</a>
+          <a class="nav-link" href="media.html">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
         </li>
       </ul>
     </div>
   </nav>
-
 
 
 
@@ -62,8 +70,8 @@
                   <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
                   <div class="form-check">
                     <label class="form-check-label">
-        <input class="form-check-input uppercase" type="checkbox" name="remember"> Happy to supply
-      </label>
+                      <input class="form-check-input uppercase" type="checkbox" name="remember"> Happy to supply
+                    </label>
                   </div>
                   <button type="submit" class="btn btn-primary">get your free book</button>
                 </form>
@@ -92,31 +100,60 @@
     </div>
   </div>-->
 
-  <div class="container-fluid">
+  <div class="container-fluid bg-black">
+    <div class="row no gutter">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div id="section3" class="container-fluid">
+          <h2 style="text-align:center">Book #1</h2>
+          <div class="card">
+            <img src="assets/media/authorpic.png" alt="Nev" style="width:100%">
+<!--            <h1>Book Title</h1>
+            <p class="price">$19.99</p>-->
+            <p>Some text about the book. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id reprehenderit expedita laborum eveniet nemo cupiditate, perspiciatis fugit, delectus architecto dolores.</p>
+            <p><button>Buy?</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div id="section3" class="container-fluid">
+          <h2 style="text-align:center">Book #2</h2>
+          <div class="card">
+            <img src="assets/media/authorpic.png" alt="Nev" style="width:100%">
+<!--            <h1>Book Title2</h1>
+            <p class="price">$19.99</p>-->
+            <p>Some text about the book. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id reprehenderit expedita laborum eveniet nemo cupiditate, perspiciatis fugit, delectus architecto dolores.</p>
+            <p><button>Buy?</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div id="section3" class="container-fluid">
+          <h2 style="text-align:center">Book #3</h2>
+          <div class="card">
+            <img src="assets/media/authorpic.png" alt="Nev" style="width:100%">
+<!--            <h1>Book Title3</h1>
+            <p class="price">$19.99</p>-->
+            <p>Some text about the book. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id reprehenderit expedita laborum eveniet nemo cupiditate, perspiciatis fugit, delectus architecto dolores.</p>
+            <p><button>Buy?</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid no gutter">
     <div class="row no gutter">
       <div class="col-12">
-        <div id="section3" class="container-fluid bg-secondary">
-          <h1>Section 3</h1>
-          <p>TBA</p>
-          <p>TBA</p>
+        <div id="section4" class="container-fluid">
+          <!--          <a href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton-ebook/dp/B017JFUTCW/ref=sr_1_1?keywords=craig+the+boy+who+lives&qid=1563211954&s=gateway&sr=8-1" target="_blank">
+  <img src="assets/media/CTBWL-kindle-non-transparent.png" alt="Craig The Boy Who Lives" style="height: 50% width:50%; object-fit: contain">
+</a>-->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row no gutter">
-      <div class="col-4">
-        <div id="section4" class="container-fluid bg-danger">
-          <h1>Section 4 </h1>
-          <p>TBA</p>
-          <p>TBA</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
+  <!--  <div class="container-fluid">
     <div class="row no gutter">
       <div class="col-12">
         <div id="section5" class="container-fluid bg-info">
@@ -127,83 +164,52 @@
 
       </div>
     </div>
-  </div>
+  </div>-->
 
 
+  <!-------------------------- FOOTER  -------------->
 
-<!--  <footer>
-    <div class="container-fluid footerstyle">
-      <div class="row">
-        <div class="col-sm-12 footerstyle">
-          <a href="https://www.youtube.com/channel/UCGy-938698Eh2lA0uYy-teQ" target="_blank" aria-hidden="true">
-            <i class="fa fa-youtube-square"></i>
-            <span class="sr-only">Youtube</span>
-          </a>
-          <a href="https://www.facebook.com/Craig-The-Boy-Who-Lives-Neville-Sexton-186571538048835/" target="_blank" aria-hidden="true">
-            <i class="fa fa-facebook-square"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
-          <a href="https://www.instagram.com/nevillesexton/" target="_blank" aria-hidden="true">
-            <i class="fa fa-instagram"></i>
-            <span class="sr-only">Instagram</span>
-          </a>
-          <a href="https://twitter.com/SextonNeville" target="_blank" aria-hidden="true">
-            <i class="fa fa-twitter-square"></i>
-            <span class="sr-only">Twitter</span>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </footer>-->
-
-
-    <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-12">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+  <footer class="container-fluid fixed-bottom">
+    <div id="footer-details" class="row">
+      <div class="col-sm-12">
+        <ul class="list-inline social-links">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Craig-The-Boy-Who-Lives-Neville-Sexton-186571538048835/" target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/SextonNeville" target="_blank">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank">
                             <i class="fa fa-pinterest" aria-hidden="true"></i>
                             <span class="sr-only">Pinterest</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/nevillesexton/" target="_blank">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCGy-938698Eh2lA0uYy-teQ" target="_blank" aria-hidden="true" target="_blank">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                         </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    
-    
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p> (C) Copyright Neville Sexton 2019</p>
+  </footer>
+
+
   <script>
     $(document).ready(function() {
       $('.toast').toast('show');

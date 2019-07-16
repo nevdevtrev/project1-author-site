@@ -1,0 +1,41 @@
+<!--         <div id="library" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#library" data-slide-to="0" class="active"></li>
+              <li data-target="#library" data-slide-to="1"></li>
+              <li data-target="#library" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/media/gabriel-byrne.jpg" alt="Gabriel Byrne" width="601" height="406">
+                <div class="carousel-caption">
+                  <h3>Gabriel Byrne</h3>
+                  <p>Moved by Craig's Story</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/CTBWL-kindle.png" alt="CTBWL-Kindle" width="1100" height="500">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/craig-the-boy-wh-lives-gill.jpg" alt="CTBWL-Gill.ie" width="331" height="502">
+                <div class="carousel-caption">
+                  <h3>Craig The Boy Who Lives</h3>
+                  <p>Published by Gill.ie</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/media/theres-no-place-like-home.jpg" alt="theres-no-place-like-home" width="265" height="308">
+                <div class="carousel-caption">
+                  <h3>There's No Place Like Home At Christmas</h3>
+                  <p>Published by Mercier Press</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#library" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+            <a class="carousel-control-next" href="#library" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+          </div>-->
