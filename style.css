@@ -66,8 +66,13 @@ body {
 
 }
 
+.navbar-brand img {
+    width: 100px;
+    padding: 0;
+}
+
 .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.64);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -221,10 +226,11 @@ body {
 }
 
 .center {
-  display: block;       /* to centre card image when width not 100% */
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    /* to centre card image when width not 100% */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /* -- ----------------------------------------------------- COLOURS -----*/
@@ -248,14 +254,24 @@ body {
 }
 
 .btn {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: .8rem;
     padding: .025rem .75rem background-color: #2a2b21;
     border: 1px solid #e9ecef;
 }
 
 .btn-primary {
-    background-color: #2f291e;
+    background-color: #155724;
+}
+
+.btn-primary:hover {
+    background-color: #08230e;
+    border-color: #343a40;
+}
+
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: grab;
 }
 
 .form-check-label {
@@ -358,50 +374,77 @@ p {
     margin-top: 14px;
 }
 
-
-@media only screen and (min-width: 768px){
-
- #section3 {
-    height: 36vh;
-    background: black;
-    color: white;
-}
-.section1-backdrop {
-    height: 86vh;
-}
-.card img {
-    width: 33%;
-}
+@media only screen and (min-width: 360px) {
+    /* Galaxy S5 */
+    .navbar-brand img {
+        width: 115px;
+    }
 }
 
-@media only screen and (min-width: 992px){
-
- #section3 {
-    height: 37vh;
-    background: black;
-    color: white;
+@media only screen and (min-width: 375px) {
+    /* iPhone X */
+    .navbar-brand img {
+        width: 142px;
+    }
 }
 
-.section1-backdrop {
-    height: 87vh;
-}
-.card img {
-    width: 43%;
-}
-}
-
-@media only screen and (min-width: 1200px){
-
- #section3 {
-    height: 100vh;
-    background: black;
-    color: white;
+@media only screen and (min-width: 411px) {
+    /* Pixel 2, Pixel 2 XL */
+    .navbar-brand img {
+        width: 132px;
+    }
 }
 
-.section1-backdrop {
-    height: 87vh;
+@media only screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 180px;
+        /* iPad */
+    }
+    #section3 {
+        height: 36vh;
+        background: black;
+        color: white;
+    }
+    .section1-backdrop {
+        height: 86vh;
+    }
+    .card img {
+        width: 33%;
+    }
 }
-.card img {
-    width: 67%;
+
+@media only screen and (min-width: 992px) {
+
+    .navbar-brand img {
+        width: 238px;
+                                        /* iPad  Pro */
+    }
+    #section3 {
+        height: 37vh;
+        background: black;
+        color: white;
+    }
+
+    .section1-backdrop {
+        height: 87vh;
+    }
+    .card img {
+        width: 43%;
+    }
 }
+
+@media only screen and (min-width: 1200px) {
+
+    #section3 {
+        height: 100vh;
+        background: black;
+        color: white;
+    }
+
+    .section1-backdrop {
+        height: 87vh;
+    }
+    .card img {
+        width: 67%;
+    }
 }
