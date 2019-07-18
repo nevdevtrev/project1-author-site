@@ -72,7 +72,7 @@ body {
 }
 
 .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -92,7 +92,7 @@ body {
 /* change the navbar link color */
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, 1);
 
 }
 
@@ -100,7 +100,7 @@ body {
 
 .navbar-dark .nav-item.active .nav-link,
 .navbar-dark .nav-item:hover .nav-link {
-    color: #eeeeee;
+    color: rgba(0, 0, 0, .75);
 }
 
 /* change the navbar-toggler transparency level */
@@ -294,6 +294,7 @@ button:not(:disabled) {
     padding: 0px 0px 12px;
 }
 
+
 .toast-header {
     background-color: transparent;
     padding: 0;
@@ -377,28 +378,40 @@ p {
 @media only screen and (min-width: 360px) {
     /* Galaxy S5 */
     .navbar-brand img {
-        width: 115px;
+        width: 133px;
     }
 }
 
 @media only screen and (min-width: 375px) {
     /* iPhone X */
     .navbar-brand img {
-        width: 142px;
+        width: 57%;
     }
 }
 
 @media only screen and (min-width: 411px) {
     /* Pixel 2, Pixel 2 XL */
     .navbar-brand img {
-        width: 132px;
+        width: 164px;
+    }
+    .section1-backdrop {
+        height: 85vh;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .navbar-dark {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
     .navbar-brand img {
-        width: 180px;
+        width: 187px;
         /* iPad */
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.5rem;
+        text-shadow: 0px 0px 20px black;
+        text-align: right;
     }
     #section3 {
         height: 36vh;
@@ -411,14 +424,56 @@ p {
     .card img {
         width: 33%;
     }
+    .social-links li a i {
+        width: 89px;
+        height: 89px;
+        padding: 15px 9px;
+        border-radius: 50%;
+        font-size: 56px;
+        line-height: 63px;
+        text-align: center;
+        color: #ffffff;
+        background: #495057;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+    }
+
+    footer {
+        font-size: 2rem;
+        /* for (C) on ipads+ */
+    }
+    footer p {
+        margin-bottom: 4px;
+        margin-top: 25px;
+    }
+    #footer-details {
+        height: 10vh;
+        padding: 33px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    .navbar-dark {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
     .navbar-brand img {
         width: 238px;
-                                        /* iPad  Pro */
+        /* iPad  Pro */
     }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 1);
+        font-size: 3.5rem;
+        text-shadow: 0px 0px 20px black;
+        text-align: right;
+    }
+
+    .toast-body h2 {
+        font-size: 3.2rem;
+        /* increase font for > 992px devices */
+    }
+
     #section3 {
         height: 37vh;
         background: black;
@@ -431,10 +486,51 @@ p {
     .card img {
         width: 43%;
     }
+
+    .social-links li a i {
+        width: 100px;
+        height: 100px;
+        padding: 15px 9px;
+        border-radius: 50%;
+        font-size: 56px;
+        line-height: 72px;
+        text-align: center;
+        color: #ffffff;
+        background: #495057;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+    }
+
+    footer {
+        font-size: 2rem;
+        /* for (C) on ipads+ */
+    }
+
+    #footer-details {
+        height: 10vh;
+        padding: 33px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
 
+    .navbar-dark {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .navbar-brand img {
+        width: 119px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.5rem;
+        text-shadow: 0px 0px 20px black;
+        text-align: right;
+        padding: 0px 22px;
+    }
+    .toast-body h2 {
+        font-size: 1.9rem;
+    }
     #section3 {
         height: 100vh;
         background: black;
@@ -446,5 +542,32 @@ p {
     }
     .card img {
         width: 67%;
+    }
+    .social-links li a i {
+        width: 65px;
+        height: 65px;
+        padding: 15px 9px;
+        border-radius: 50%;
+        font-size: 42px;
+        line-height: 36px;
+        text-align: center;
+        color: #ffffff;
+        background: #495057;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+    }
+
+    footer {
+        font-size: 1.5rem;
+        /* for (C) on ipads and above */
+    }
+    footer p {
+        margin-bottom: 2px;
+        margin-top: 32px;
+    }
+    #footer-details {
+        height: 10vh;
+        padding: 33px;
+        text-align: center;
     }
 }
