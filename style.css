@@ -6,7 +6,7 @@ body {
 
 
 .section1-backdrop {
-    height: 84vh;
+    height: 100vh;
     /* background: url("assets/media/author desk large.png") no-repeat center center fixed; */
     background-image: url("assets/media/author desk large.png");
     background-position: top 160px bottom 100px;
@@ -67,7 +67,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 100px;
+    width: 135px;
     padding: 0;
 }
 
@@ -100,13 +100,18 @@ body {
 
 .navbar-dark .nav-item.active .nav-link,
 .navbar-dark .nav-item:hover .nav-link {
-    color: rgba(0, 0, 0, .75);
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 0px -1px 0px #f8f9fa;
 }
 
 /* change the navbar-toggler transparency level */
 
 .navbar-toggler {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.clearfix {
+    overflow: auto;
 }
 
 /* -- ----------------------------------------------------- JUMBOTRON ---*/
@@ -279,7 +284,8 @@ button:not(:disabled) {
 }
 
 .col-6,
-.col-12,
+/*.col-12,*/
+
 .col-4,
 .col-3 {
     padding: 0;
@@ -315,13 +321,14 @@ button:not(:disabled) {
 
 footer {
     background-color: #000000;
-    color: #fafafa;
-    min-height: 100px;
+    color: #adb5bd;
+    min-height: 53px;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 Ul {
@@ -330,25 +337,23 @@ Ul {
 }
 
 
-
-
 .social-links li a i {
     /* ---------------------------------------------------------*/
-    width: 48px;
+    width: 40px;
     /*                                                          */
-    height: 48px;
+    height: 40px;
     /*                                                          */
     padding: 12px 0;
     /*                     Sets circular background for links   */
     border-radius: 50%;
     /*                                                          */
-    font-size: 22px;
+    font-size: 21px;
     /*                                                          */
-    line-height: 23px;
+    line-height: 17px;
     /*----------------------------------------------------------*/
     text-align: center;
     color: #ffffff;
-    background: #495057;
+    background: #01162b;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -359,20 +364,30 @@ Ul {
 }
 
 #footer-details {
-    height: 10vh;
-    padding: 20px;
-    text-align: center;
+    height: 7vh;
+    padding: 0px;
+    align-items: center;
 }
 
-#footer-details.row {
-    padding-left: 0;
-    padding-right: 0;
-}
+/*.fixed-bottom  ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}*/
 
 p {
     margin-bottom: 4px;
     /* Keep (Copyright) balanced in footer */
     margin-top: 14px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0;
 }
 
 @media only screen and (min-width: 360px) {
@@ -395,7 +410,7 @@ p {
         width: 164px;
     }
     .section1-backdrop {
-        height: 85vh;
+        height: 100vh;
     }
 }
 
@@ -418,39 +433,32 @@ p {
         background: black;
         color: white;
     }
-    .section1-backdrop {
-        height: 86vh;
-    }
+
     .card img {
         width: 33%;
     }
     .social-links li a i {
-        width: 89px;
-        height: 89px;
+        width: 53px;
+        height: 53px;
         padding: 15px 9px;
         border-radius: 50%;
-        font-size: 56px;
-        line-height: 63px;
+        font-size: 33px;
+        line-height: 26px;
         text-align: center;
         color: #ffffff;
-        background: #495057;
-        -moz-transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
+        background: #01162b;
     }
 
     footer {
-        font-size: 2rem;
-        /* for (C) on ipads+ */
+        font-size: 1.5rem;
+        height: 10vh;
+        /* for (C) on ipads and above */
     }
     footer p {
-        margin-bottom: 4px;
-        margin-top: 25px;
+        margin-bottom: 21px;
+        margin-top: 16px;
     }
-    #footer-details {
-        height: 10vh;
-        padding: 33px;
-        text-align: center;
-    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -480,37 +488,22 @@ p {
         color: white;
     }
 
-    .section1-backdrop {
-        height: 87vh;
-    }
     .card img {
         width: 43%;
     }
 
     .social-links li a i {
-        width: 100px;
-        height: 100px;
+        width: 48px;
+        height: 48px;
         padding: 15px 9px;
         border-radius: 50%;
-        font-size: 56px;
-        line-height: 72px;
+        font-size: 28px;
+        line-height: 21px;
         text-align: center;
         color: #ffffff;
-        background: #495057;
-        -moz-transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
+        background: #01162b;
     }
 
-    footer {
-        font-size: 2rem;
-        /* for (C) on ipads+ */
-    }
-
-    #footer-details {
-        height: 10vh;
-        padding: 33px;
-        text-align: center;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -528,46 +521,24 @@ p {
         text-align: right;
         padding: 0px 22px;
     }
+
     .toast-body h2 {
         font-size: 1.9rem;
     }
-    #section3 {
-        height: 100vh;
-        background: black;
-        color: white;
-    }
 
-    .section1-backdrop {
-        height: 87vh;
-    }
     .card img {
         width: 67%;
     }
     .social-links li a i {
-        width: 65px;
-        height: 65px;
+        width: 53px;
+        height: 53px;
         padding: 15px 9px;
         border-radius: 50%;
-        font-size: 42px;
-        line-height: 36px;
+        font-size: 33px;
+        line-height: 26px;
         text-align: center;
         color: #ffffff;
-        background: #495057;
-        -moz-transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
-    }
+        background: #01162b;
 
-    footer {
-        font-size: 1.5rem;
-        /* for (C) on ipads and above */
-    }
-    footer p {
-        margin-bottom: 2px;
-        margin-top: 32px;
-    }
-    #footer-details {
-        height: 10vh;
-        padding: 33px;
-        text-align: center;
     }
 }
