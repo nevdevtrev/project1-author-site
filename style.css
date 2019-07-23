@@ -27,9 +27,10 @@ body {
     padding-bottom: 100px;
 }
 
+/*--------------------- Centre Mailing-list toast box -------*/
+
 .section1-backdrop .row {
-    padding-top: 97px;
-    /* Centre Mailing-list toast box  */
+    padding: 52px 0;
 }
 
 .section4-backdrop {
@@ -47,6 +48,7 @@ body {
 }
 
 
+
 /*.blendbg {
     background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
     background-size: cover;
@@ -57,7 +59,7 @@ body {
 
 .navbar {
     padding: 0px 10px;
-    height: 19vh;
+    height: 10vh;
 }
 
 .navbar-brand {
@@ -67,7 +69,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 135px;
+    width: 100px;
     padding: 0;
 }
 
@@ -110,32 +112,15 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.clearfix {
-    overflow: auto;
-}
+.shadow {}
 
-/* -- ----------------------------------------------------- JUMBOTRON ---*/
-
-.mailing-list {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 6%;
-    padding: 14px;
-    max-width: 75%;
-    justify-content: center;
+.navlink {
+    text-align=center;
+    text-shadow: 3px 2px white;
 }
 
 
-.jumbotron {
-    background-color: transparent;
-}
 
-.jumbotron-large {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 30px;
-
-}
 
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
@@ -144,15 +129,29 @@ body {
 }
 */
 
-#section3 {
+.section-privacy,
+#section3,
+#section5,
+#section6,
+#section7,
+#section8 {
     height: 100vh;
     background: black;
     color: white;
+    padding-top: 20vh;
+    /* to keep each section flush within footer and navbar */
 }
 
-#section3>p {
-    margin: 0;
-    /* To keep section 3 flush black with previous section */
+#section4 {
+    height: 100vh;
+    background-color: #1d1919;
+    color: white;
+    padding-top: 20vh;
+}
+
+#section3 .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .col-lg-4,
@@ -162,33 +161,12 @@ body {
     background: black;
 }
 
-#section4 {
-    /*    height: 100vh;*/
-    position: relative;
-    /*  background: url("assets/media/CTBWL-kindle-non-transparent.png") no-repeat center center fixed;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
 
-#section4 img {
+/*#section4 img {
     height: 74vh;
 }
-
-#section5 {
-    height: 23vh;
-}
-
-/*.spacer {
-    height: 16vh;
-    background: black;
-    
-}*/
+*/
+.section-privacy {}
 
 /* -- ----------------------------------------------------- Card section --*/
 
@@ -215,8 +193,9 @@ body {
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 40%;
     font-size: 18px;
+    border-radius: 65%;
 
 }
 
@@ -238,18 +217,41 @@ body {
     width: 50%;
 }
 
-/* -- ----------------------------------------------------- COLOURS -----*/
+/* --------------------------Contact Form section-----------*/
 
-/* -- ----------------------------------------------------- TEXT--- -----*/
+.contact-form-bg {
+    background-color: #1d1919;
+}
 
-.shadow {}
+.contact-header {
+    font-family: 'Amatic SC', cursive;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 300px;
+}
 
-.navlink {
-    text-align=center;
-    text-shadow: 3px 2px white;
+.contact-form-center {
+    padding-top: 10px;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #fafafa;
+    background-color: #18a939;
+}
+
+@media(min-width: 992px) {
+    .contact-form-center {
+        padding-top: 30px;
+        min-height: 240px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
 
 /*---------------modify bootstrap email form & Toast (buttons, text, padding etc.) -------*/
 
@@ -259,9 +261,10 @@ body {
 }
 
 .btn {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     border-radius: .8rem;
-    padding: .025rem .75rem background-color: #2a2b21;
+    padding: .025rem .75rem; 
+    background-color: #2a2b21;
     border: 1px solid #e9ecef;
 }
 
@@ -293,16 +296,21 @@ button:not(:disabled) {
 }
 
 .toast {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    color: white;
 }
 
 .toast-body {
     padding: 0px 0px 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    max-width: 240px;
 }
 
 
 .toast-header {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 0;
 }
 
@@ -339,17 +347,17 @@ Ul {
 
 .social-links li a i {
     /* ---------------------------------------------------------*/
-    width: 40px;
+    width: 48px;
     /*                                                          */
-    height: 40px;
+    height: 48px;
     /*                                                          */
-    padding: 12px 0;
+    padding: 15px 15px;
     /*                     Sets circular background for links   */
     border-radius: 50%;
     /*                                                          */
-    font-size: 21px;
+    font-size: 26px;
     /*                                                          */
-    line-height: 17px;
+    line-height: 18px;
     /*----------------------------------------------------------*/
     text-align: center;
     color: #ffffff;
@@ -367,6 +375,10 @@ Ul {
     height: 7vh;
     padding: 0px;
     align-items: center;
+}
+
+#white {
+    color: white;
 }
 
 /*.fixed-bottom  ul {
@@ -388,55 +400,27 @@ p {
     font-size: 0.75rem;
     text-align: center;
     padding: 0;
+
 }
 
-@media only screen and (min-width: 360px) {
-    /* Galaxy S5 */
-    .navbar-brand img {
-        width: 133px;
-    }
-}
 
-@media only screen and (min-width: 375px) {
-    /* iPhone X */
-    .navbar-brand img {
-        width: 57%;
-    }
 }
-
-@media only screen and (min-width: 411px) {
-    /* Pixel 2, Pixel 2 XL */
-    .navbar-brand img {
-        width: 164px;
-    }
-    .section1-backdrop {
-        height: 100vh;
-    }
-}
-
+/*
 @media only screen and (min-width: 768px) {
-    .navbar-dark {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .navbar-brand img {
-        width: 187px;
-        /* iPad */
-    }
+
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 1);
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-shadow: 0px 0px 20px black;
         text-align: right;
-    }
-    #section3 {
-        height: 36vh;
-        background: black;
-        color: white;
+        padding-right: 1rem;
+        padding-left: .5rem;
     }
 
     .card img {
         width: 33%;
     }
+
     .social-links li a i {
         width: 53px;
         height: 53px;
@@ -454,6 +438,7 @@ p {
         height: 10vh;
         /* for (C) on ipads and above */
     }
+
     footer p {
         margin-bottom: 21px;
         margin-top: 16px;
@@ -462,58 +447,33 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-    .navbar-dark {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .navbar-brand img {
-        width: 238px;
-        /* iPad  Pro */
-    }
 
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 1);
         font-size: 3.5rem;
         text-shadow: 0px 0px 20px black;
         text-align: right;
+        padding-right: .5rem;
+        padding-left: .8rem;
     }
-
+    .navbar-brand img {
+        width: 269px;
+    }
     .toast-body h2 {
         font-size: 3.2rem;
         /* increase font for > 992px devices */
     }
 
-    #section3 {
-        height: 37vh;
-        background: black;
-        color: white;
-    }
 
     .card img {
         width: 43%;
     }
 
-    .social-links li a i {
-        width: 48px;
-        height: 48px;
-        padding: 15px 9px;
-        border-radius: 50%;
-        font-size: 28px;
-        line-height: 21px;
-        text-align: center;
-        color: #ffffff;
-        background: #01162b;
-    }
 
 }
 
 @media only screen and (min-width: 1200px) {
 
-    .navbar-dark {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .navbar-brand img {
-        width: 119px;
-    }
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 1);
         font-size: 2.5rem;
@@ -541,4 +501,7 @@ p {
         background: #01162b;
 
     }
-}
+    footer {
+        line-height: 4.5;
+    }
+}*/
