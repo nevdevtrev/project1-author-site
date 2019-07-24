@@ -124,34 +124,55 @@ body {
 
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
-/*#section2 {
-    height: 74vh;
-}
-*/
-
-.section-privacy,
 #section3,
-#section5,
-#section6,
-#section7,
-#section8 {
-    height: 100vh;
-    background: black;
-    color: white;
-    padding-top: 20vh;
-    /* to keep each section flush within footer and navbar */
-}
-
-#section4 {
-    height: 100vh;
+#section5
+    {
+    width: 100%;
+    height: auto;
     background-color: #1d1919;
     color: white;
     padding-top: 20vh;
 }
 
-#section3 .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
+#section8 {
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+    padding-top: 20vh;
+    padding-bottom: 20px;
+    /* to keep each section flush within footer and navbar */
+}
+
+#section8 .row {
+    padding-bottom: 30px;
+}
+
+#section4 {
+    width: 100%;
+    height: auto;
+    background-color: #1d1919;
+    color: white;
+    padding-top: 20vh;
+}
+
+
+#section6 {
+    background-color: blue;
+    height: auto;
+    color: white;
+    padding-top: 20vh;
+}
+
+#section7 {
+    background-color: green;
+    height: 100vh;
+    color: white;
+    padding-top: 20vh;
+}
+
+#section8 img {
+    float: left;
 }
 
 .col-lg-4,
@@ -162,64 +183,59 @@ body {
 }
 
 
-/*#section4 img {
-    height: 74vh;
-}
-*/
-.section-privacy {}
+/* -- ----------------------Books Gallery section ---------------------- --*/
 
-/* -- ----------------------------------------------------- Card section --*/
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: #721c24;
-    border-radius: 5.25rem;
+div.gallery {
+    border: 1px solid #000;
 }
 
-.price {
-    color: grey;
-    font-size: 22px;
+div.gallery:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 40%;
-    font-size: 18px;
-    border-radius: 65%;
-
-}
-
-.card button:hover {
-    opacity: 0.7;
-    padding: 0;
-}
-
-.card img {
+div.gallery img {
     width: 100%;
-    align-items: center;
+    height: auto;
+    padding: 77px;
 }
 
-.center {
-    display: block;
-    /* to centre card image when width not 100% */
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+div.desc {
+  padding: 15px;
+  text-align: center;
+      font-size: 1.5rem;
 }
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .responsive {
+        width: 24.999%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* --------------------------Contact Form section-----------*/
 
-.contact-form-bg {
+/*
+form .contact-form-bg {
     background-color: #1d1919;
 }
 
@@ -251,6 +267,17 @@ button[type="submit"] {
         max-width: 50%;
         margin: 0 auto;
     }
+}*/
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
 
 /*---------------modify bootstrap email form & Toast (buttons, text, padding etc.) -------*/
@@ -263,7 +290,7 @@ button[type="submit"] {
 .btn {
     font-size: 1.8rem;
     border-radius: .8rem;
-    padding: .025rem .75rem; 
+    padding: .025rem .75rem;
     background-color: #2a2b21;
     border: 1px solid #e9ecef;
 }
@@ -330,13 +357,9 @@ button:not(:disabled) {
 footer {
     background-color: #000000;
     color: #adb5bd;
-    min-height: 53px;
+    max-height: 100px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
 }
 
 Ul {
@@ -369,6 +392,10 @@ Ul {
 
 .social-links li a i:hover {
     background: #721c24;
+}
+
+footer .row {
+    justify-content: center;
 }
 
 #footer-details {
@@ -405,6 +432,7 @@ p {
 
 
 }
+
 /*
 @media only screen and (min-width: 768px) {
 
@@ -417,9 +445,6 @@ p {
         padding-left: .5rem;
     }
 
-    .card img {
-        width: 33%;
-    }
 
     .social-links li a i {
         width: 53px;
@@ -437,12 +462,13 @@ p {
         font-size: 1.5rem;
         height: 10vh;
         /* for (C) on ipads and above */
-    }
 
-    footer p {
-        margin-bottom: 21px;
-        margin-top: 16px;
-    }
+}
+
+footer p {
+    margin-bottom: 21px;
+    margin-top: 16px;
+}
 
 }
 
@@ -463,13 +489,7 @@ p {
         font-size: 3.2rem;
         /* increase font for > 992px devices */
     }
-
-
-    .card img {
-        width: 43%;
-    }
-
-
+    */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -486,9 +506,9 @@ p {
         font-size: 1.9rem;
     }
 
-    .card img {
+    /*    .card img {
         width: 67%;
-    }
+    }*/
     .social-links li a i {
         width: 53px;
         height: 53px;
@@ -504,4 +524,4 @@ p {
     footer {
         line-height: 4.5;
     }
-}*/
+}
