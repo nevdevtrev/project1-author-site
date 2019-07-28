@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Almendra+Display&display=swap');
 body {
     position: relative;
     font-family: 'Amatic SC', cursive;
@@ -69,19 +71,26 @@ body {
 }
 
 .navbar-brand img {
-    width: 100px;
+    width: 40%;
+    height: auto;
+    /* to keep brand image scalable and of appropriate size*/
     padding: 0;
 }
 
 .navbar-dark {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
     font-size: 2rem;
     text-shadow: 0px 0px 20px black;
-    text-align: right;
+    text-align: left;
+    padding: 3px 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
 }
 
 /* change the navbar brand and text color */
@@ -94,22 +103,55 @@ body {
 /* change the navbar link color */
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.6);
 
 }
 
 /* change the color of active or hovered navbar links */
 
-.navbar-dark .nav-item.active .nav-link,
-.navbar-dark .nav-item:hover .nav-link {
+.navbar-dark .nav-item.active .nav-link {
     color: rgba(0, 0, 0, 1);
     text-shadow: 0px -1px 0px #f8f9fa;
+}
+
+.navbar-dark .nav-item:hover .nav-link {
+    color: #856404;
+    text-shadow: 0px -1px 0px #f8f9fa;
+}
+
+/*----------------Fontawesome styling--------------*/
+
+.fa-user-secret:before,
+.fa-clipboard-list:before,
+.fa-blog:before,
+.fa-book-reader:before,
+.fa-at:before,
+.fa-photo-video:before {
+    font-size: 20px;
+    color: #856404;
+}
+
+.fa-home:before {
+    content: "\f015";
+    font-size: 21px;
+}
+
+.fa-user-secret:after,
+.fa-clipboard-list:after,
+.fa-blog:after,
+.fa-book-reader:after,
+.fa-at:after,
+.fa-photo-video:after {
+    font-size: 20px;
+    color: #856404;
 }
 
 /* change the navbar-toggler transparency level */
 
 .navbar-toggler {
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.25rem;
+    /* round out the button and grey it*/
 }
 
 .shadow {}
@@ -125,11 +167,40 @@ body {
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
 #section3,
-#section5
-    {
+#section5 {
     width: 100%;
     height: auto;
     background-color: #1d1919;
+    color: white;
+    padding-top: 20vh;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+
+#section4 {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    color: white;
+    padding-top: 20vh;
+}
+
+
+#section6 {
+    background-color: blue;
+    height: auto;
+    color: white;
+    padding-top: 20vh;
+}
+
+#section7 {
+    background-color: black;
+    height: auto;
     color: white;
     padding-top: 20vh;
 }
@@ -148,31 +219,20 @@ body {
     padding-bottom: 30px;
 }
 
-#section4 {
-    width: 100%;
+/*#section8 img {
+    width: 60%;
     height: auto;
-    background-color: #1d1919;
-    color: white;
-    padding-top: 20vh;
+    float: right;
+}
+*/
+
+#section8 h3 {
+    margin: auto;
 }
 
 
-#section6 {
-    background-color: blue;
-    height: auto;
-    color: white;
-    padding-top: 20vh;
-}
-
-#section7 {
-    background-color: green;
-    height: 100vh;
-    color: white;
-    padding-top: 20vh;
-}
-
-#section8 img {
-    float: left;
+#section8 .col-12 {
+    padding-bottom: 20vh;
 }
 
 .col-lg-4,
@@ -182,11 +242,25 @@ body {
     background: black;
 }
 
+/* -- ----------------------Text section ---------------------- --*/
+
+/*.uppercase {
+    text-transform: uppercase
+}*/
+
+.section-title {
+    /*  font-family: 'Jacques Francois Shadow', cursive;*/
+    font-family: 'Almendra Display', cursive;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* -- ----------------------Books Gallery section ---------------------- --*/
 
 div.gallery {
-    border: 1px solid #000;
+    border: none;
 }
 
 div.gallery:hover {
@@ -196,13 +270,13 @@ div.gallery:hover {
 div.gallery img {
     width: 100%;
     height: auto;
-    padding: 77px;
+    padding: 30px;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
-      font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -234,7 +308,6 @@ div.desc {
 
 /* --------------------------Contact Form section-----------*/
 
-/*
 form .contact-form-bg {
     background-color: #1d1919;
 }
@@ -249,7 +322,9 @@ form .contact-form-bg {
 .contact-form-center {
     padding-top: 10px;
     max-width: 70%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
 }
 
 
@@ -264,10 +339,11 @@ button[type="submit"] {
     .contact-form-center {
         padding-top: 30px;
         min-height: 240px;
-        max-width: 50%;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
     }
-}*/
+}
 
 .header {
     color: #36A0FF;
@@ -369,22 +445,15 @@ Ul {
 
 
 .social-links li a i {
-    /* ---------------------------------------------------------*/
-    width: 48px;
-    /*                                                          */
-    height: 48px;
-    /*                                                          */
-    padding: 15px 15px;
-    /*                     Sets circular background for links   */
+    width: 36px;
+    height: 36px;
+    padding: 10px 9px;
     border-radius: 50%;
-    /*                                                          */
-    font-size: 26px;
-    /*                                                          */
+    font-size: 19px;
     line-height: 18px;
-    /*----------------------------------------------------------*/
     text-align: center;
     color: #ffffff;
-    background: #01162b;
+    background: #151217;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -396,6 +465,7 @@ Ul {
 
 footer .row {
     justify-content: center;
+    text-align: center;
 }
 
 #footer-details {
@@ -433,95 +503,53 @@ p {
 
 }
 
-/*
-@media only screen and (min-width: 768px) {
 
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, 1);
-        font-size: 3rem;
-        text-shadow: 0px 0px 20px black;
-        text-align: right;
-        padding-right: 1rem;
-        padding-left: .5rem;
-    }
-
-
-    .social-links li a i {
-        width: 53px;
-        height: 53px;
-        padding: 15px 9px;
-        border-radius: 50%;
-        font-size: 33px;
-        line-height: 26px;
-        text-align: center;
-        color: #ffffff;
-        background: #01162b;
-    }
-
-    footer {
-        font-size: 1.5rem;
-        height: 10vh;
-        /* for (C) on ipads and above */
-
-}
-
-footer p {
-    margin-bottom: 21px;
-    margin-top: 16px;
-}
-
-}
 
 @media only screen and (min-width: 992px) {
 
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, 1);
-        font-size: 3.5rem;
-        text-shadow: 0px 0px 20px black;
-        text-align: right;
-        padding-right: .5rem;
-        padding-left: .8rem;
-    }
-    .navbar-brand img {
-        width: 269px;
-    }
+
     .toast-body h2 {
         font-size: 3.2rem;
         /* increase font for > 992px devices */
     }
-    */
+    #section8 img {
+        width: 25%;
+        height: auto;
+        float: right;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, 1);
-        font-size: 2.5rem;
-        text-shadow: 0px 0px 20px black;
-        text-align: right;
-        padding: 0px 22px;
-    }
-
-    .toast-body h2 {
-        font-size: 1.9rem;
-    }
-
-    /*    .card img {
-        width: 67%;
-    }*/
     .social-links li a i {
-        width: 53px;
-        height: 53px;
-        padding: 15px 9px;
+        width: 36px;
+        height: 36px;
+        padding: 10px 9px;
         border-radius: 50%;
-        font-size: 33px;
-        line-height: 26px;
+        font-size: 19px;
+        line-height: 18px;
         text-align: center;
         color: #ffffff;
-        background: #01162b;
+        background: #151217;
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+    }
+}
 
-    }
-    footer {
-        line-height: 4.5;
-    }
+
+/*----------------------------------------------------------------------*/
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%)
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
 }
