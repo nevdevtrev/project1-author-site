@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Almendra+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
+
 body {
     position: relative;
     font-family: 'Amatic SC', cursive;
@@ -167,12 +169,17 @@ body {
 /* -- ----------------------------------------------------- CONTAINERS --*/
 
 #section3,
-#section5 {
+#section4,
+#section5,
+#section6,
+#section7,
+#section8 {
     width: 100%;
     height: auto;
-    background-color: #1d1919;
+    background-color: #000;
     color: white;
     padding-top: 20vh;
+        padding-bottom: 20vh;
 }
 
 .center {
@@ -181,30 +188,7 @@ body {
     width: 50px;
 }
 
-
-#section4 {
-    width: 100%;
-    height: auto;
-    background-color: blue;
-    color: white;
-    padding-top: 20vh;
-}
-
-
-#section6 {
-    background-color: blue;
-    height: auto;
-    color: white;
-    padding-top: 20vh;
-}
-
-#section7 {
-    background-color: black;
-    height: auto;
-    color: white;
-    padding-top: 20vh;
-}
-
+/*
 #section8 {
     width: 100%;
     height: auto;
@@ -213,11 +197,11 @@ body {
     padding-top: 20vh;
     padding-bottom: 20px;
     /* to keep each section flush within footer and navbar */
-}
+/*}*/
 
-#section8 .row {
+/*#section8 .row {
     padding-bottom: 30px;
-}
+}*/
 
 /*#section8 img {
     width: 60%;
@@ -249,13 +233,14 @@ body {
 }*/
 
 .section-title {
-    /*  font-family: 'Jacques Francois Shadow', cursive;*/
-    font-family: 'Almendra Display', cursive;
+    font-family: 'Fascinate', cursive;
     text-align: center;
     color: white;
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 46px;
+    margin-top: 14px;
 }
+
 
 /* -- ----------------------Books Gallery section ---------------------- --*/
 
@@ -514,7 +499,7 @@ p {
     }
     #section8 img {
         width: 25%;
-        height: auto;
+        max-height: 200px;
         float: right;
     }
 }
