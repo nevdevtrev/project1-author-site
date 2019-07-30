@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Almendra+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aclonica&display=swap');
 
 body {
     position: relative;
@@ -63,7 +64,7 @@ body {
 
 .navbar {
     padding: 0px 10px;
-    height: 10vh;
+    height: 14vh;
 }
 
 .navbar-brand {
@@ -73,7 +74,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 40%;
+    width: 27%;
     height: auto;
     /* to keep brand image scalable and of appropriate size*/
     padding: 0;
@@ -102,10 +103,15 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
+.navbar i {
+    font-size: 40px;
+    color: #9da2a1;
+}
+
 /* change the navbar link color */
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 1);
 
 }
 
@@ -178,8 +184,8 @@ body {
     height: auto;
     background-color: #000;
     color: white;
-    padding-top: 20vh;
-        padding-bottom: 20vh;
+    padding-top: 13vh;
+    padding-bottom: 20vh;
 }
 
 .center {
@@ -188,27 +194,7 @@ body {
     width: 50px;
 }
 
-/*
-#section8 {
-    width: 100%;
-    height: auto;
-    background: black;
-    color: white;
-    padding-top: 20vh;
-    padding-bottom: 20px;
-    /* to keep each section flush within footer and navbar */
-/*}*/
 
-/*#section8 .row {
-    padding-bottom: 30px;
-}*/
-
-/*#section8 img {
-    width: 60%;
-    height: auto;
-    float: right;
-}
-*/
 
 #section8 h3 {
     margin: auto;
@@ -241,6 +227,36 @@ body {
     margin-top: 14px;
 }
 
+.subsection-title {
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 110px;
+    margin-top: 14px;
+}
+
+.subsection-title i {
+    color: #b19709;
+}
+
+.subsection-title a {
+    color: #b1a5a5;
+}
+
+.subsection-title p {
+    margin-bottom: 19px;
+    margin-top: 37px;
+}
+
+.section-p {
+    font-size: 40px;
+    color: #e7edf3;
+    text-align: left;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 30px;
+    padding: 20px;
+}
 
 /* -- ----------------------Books Gallery section ---------------------- --*/
 
@@ -272,6 +288,13 @@ div.desc {
 }
 
 @media only screen and (min-width: 768px) {
+
+    .navbar-brand img {
+        width: 45%;
+        height: auto;
+        padding: 0;
+    }
+
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
@@ -279,17 +302,37 @@ div.desc {
 }
 
 @media only screen and (min-width: 992px) {
+
+
     .responsive {
         width: 24.999%;
     }
+
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+
+.block-separator {
+    border: 0;
+    width: 200px;
+    height: 5px;
+    background-color: #b98c0e; /* Underline for Section Titles */
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+/* --------------------------Media section-----------*/
+
+.embed-responsive {
+    width: 85%;    /* Maintain balanced spacing between videos*/
+    align-items: centre;
+}
 
 /* --------------------------Contact Form section-----------*/
 
@@ -299,13 +342,15 @@ form .contact-form-bg {
 
 .contact-header {
     font-family: 'Amatic SC', cursive;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: -47px;
+    margin-bottom: 9px;
     font-weight: 300px;
+/*    padding-left: 10px;
+    padding-right: 10px;*/
 }
 
 .contact-form-center {
-    padding-top: 10px;
+    padding-top: 2px;
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -387,6 +432,7 @@ button:not(:disabled) {
     background-color: rgba(0, 0, 0, 0.4);
     max-width: 700px;
     color: white;
+    border-radius: 2rem;
 }
 
 .toast-body {
@@ -486,9 +532,32 @@ p {
 }
 
 
+
+
+@media only screen and (min-width: 400px) {
+    #section3,
+    #section4,
+    #section5,
+    #section6,
+    /*------Keeps section headings higher in larger screens----*/
+    #section7,
+    #section8 {
+        width: 100%;
+        height: auto;
+        background-color: #000;
+        color: white;
+        padding-top: 8vh;
+        padding-bottom: 20vh;
+    }
 }
 
-
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: 0px 10px;
+        height: 10vh;
+        /* To keep navbar from overlapping section titles */
+    }
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -499,8 +568,26 @@ p {
     }
     #section8 img {
         width: 25%;
-        max-height: 200px;
+        max-height: 500px;
         float: right;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        padding: 30px 30px;
+    }
+    .contact-header {
+        font-family: 'Amatic SC', cursive;
+        /* better margins for contact form on lg screens */
+        margin-top: 3px;
+        margin-bottom: 35px;
+    }
+    .contact-form-center {
+        padding-top: 2px;
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
     }
 }
 
@@ -519,22 +606,32 @@ p {
         -webkit-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
     }
+
+    div.gallery img {
+        width: 70%;
+        height: auto;            /*Keep books framed well on larger screens*/
+        padding: 30px 30px;
+    }
+
 }
 
 
+.badge-primary {
+    color: #0b0c0c;
+    background-color: #d2a50e;
+    font-size: 9px;
+}
+
+.list-group-item:first-child {
+    background-color: black;
+    font-size: 14px;
+}
+
+.align-items-center {
+    background-color: black;
+    font-size: 14px;
+}
 /*----------------------------------------------------------------------*/
 
-.carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {
-    transform: translateX(33.33%);
-}
 
-.carousel-inner .carousel-item-left.active,
-.carousel-inner .carousel-item-prev {
-    transform: translateX(-33.33%)
-}
 
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left {
-    transform: translateX(0);
-}
