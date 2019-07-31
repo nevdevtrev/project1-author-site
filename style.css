@@ -557,6 +557,10 @@ p {
         height: 10vh;
         /* To keep navbar from overlapping section titles */
     }
+    .navbar-brand img {
+    width: 20%;
+    height: auto;
+}
 }
 
 @media only screen and (min-width: 992px) {
@@ -606,7 +610,11 @@ p {
         -webkit-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
     }
-
+    
+.navbar-brand img {
+    width: 20%;
+    height: auto;
+}
     div.gallery img {
         width: 70%;
         height: auto;            /*Keep books framed well on larger screens*/
