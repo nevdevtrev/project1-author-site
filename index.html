@@ -78,10 +78,10 @@
                 <h3 class="uppercase">join the mailing list for updates and receive your <u>free</u> neville sexton book</h3>
                 <form action="#">
                   <label for="email"></label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email" required="true">
                   <div class="form-check">
                     <label class="form-check-label">
-                      <input class="form-check-input uppercase" type="checkbox" name="remember"> Happy to supply
+                      <input class="form-check-input uppercase" type="checkbox" name="remember" required="true"> Happy to supply
                     </label>
                   </div>
                   <button type="submit" class="btn btn-primary">get your free book</button>
@@ -271,22 +271,13 @@
 
   <!-------------------------- section 6 Blog   ---------------------------------------------->
 
-  <div class="container-fluid" id="section6">
+  <div class="container-fluid section6-backdrop" id="section6">
     <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-blog"></i>Blog</p>
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col subsection-title">
-        <p><i class="fas fa-mug-hot"></i>Coming Soon - Nev's Blog</P>
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col-12">
+      <div class="col-12 section-title">
         <div class="container-fluid">
-          <img src="assets/media/blog.png" alt="Irish Independent Article" width="100%" height="auto">
-        </div>
+          <p><i class="fas fa-blog"></i>Blog</p>
+        <img src="assets/media/blog.png" alt="Irish Independent Article" width="100%" height="auto">
+       </div>
       </div>
     </div>
   </div>
@@ -321,6 +312,7 @@
         </ul>
       </div>
     </div>
+      <hr class="block-separator--long">
     <div class="row no gutter">
       <div class="col subsection-title">
         <p><i class="fas fa-signature"></i>Book Signings</P>
@@ -378,8 +370,10 @@
 
   <footer class="container-fluid fixed-bottom">
     <div class="row">
-      <div class="col-sm-4 d-none d-lg-block">
-        <span><a href="index.html">Terms & Conditions</a></span>
+      <div class="col-sm-4 d-none d-lg-block popoverlink">
+        <span> <a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" title="Privacy Details" data-content="We will only use your Personal Data when the law allows us to. Most commonly, we use your Personal Data to:
+1. process and manage your use of our website; 2. respond to your questions, comments and requests; 3. where you have opted-in to receive marketing from us, deliver communications that are relevant to your preferences / may be of interest to you;
+4. improve our services and Website through analysis of information.">Terms & Conditions</a></span>
       </div>
       <div class="col-sm-4">
         <ul class="list-inline social-links">
@@ -415,22 +409,22 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-4 d-none d-lg-block">
-        <span>© Neville Sexton</span>
+      <div class="col-sm-4 d-none d-lg-block popoverlink">
+        <span><a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" title="Copyright" data-content="This site is designed and built by Neville Sexton  July 2019">© Neville Sexton</a></span>
       </div>
     </div>
   </footer>
 
   <script>
     $(document).ready(function() {
-      $('.toast').toast('show'); //For Toast mailing-list
+      $('.toast').toast('show');  //For Toast mailing-list
     });
-  </script>
-
+  
+</script>
 
 
   <script>
-    /*-- ---The below is for smooth scrolling - taken from css-tricks.com------ --*/
+    /*-- ---The below is for smooth scrolling - details from css-tricks.com------ --*/
 
     // Select all links with hashes
     $('a[href*="#"]')
@@ -468,7 +462,13 @@
           }
         }
       });
-  </script>
+ </script>
+  
+  <script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   /* Script for popover in footer*/
+});
+</script>
 </body>
 
 </html>

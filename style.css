@@ -49,16 +49,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*    mix-blend-mode: multiply;*/
+
 }
 
-
-
-/*.blendbg {
-    background-image: url('https://media.giphy.com/media/n6zhIUWJVsH3a/source.gif');
-    background-size: cover;
-    width: 100vw;
-}*/
 
 /* -- -----------------------------------------------------NAVBAR STUFF --*/
 
@@ -193,8 +186,19 @@ body {
     margin-right: auto;
     width: 50px;
 }
-
-
+/*.section6-backdrop {
+    height: auto;
+    width: 100%;
+    background: url("assets/media/blog.png") no-repeat center center fixed;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
 
 #section8 h3 {
     margin: auto;
@@ -222,7 +226,7 @@ body {
     font-family: 'Fascinate', cursive;
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: 3rem;             /* styling each section title*/
     margin-bottom: 46px;
     margin-top: 14px;
 }
@@ -230,7 +234,7 @@ body {
 .subsection-title {
     font-family: 'Aclonica', sans-serif;
     text-align: center;
-    color: white;
+    color: white;                /* styling each subsection title*/
     font-size: 34px;
     margin-bottom: 110px;
     margin-top: 14px;
@@ -322,15 +326,19 @@ div.desc {
     border: 0;
     width: 200px;
     height: 5px;
-    background-color: #b98c0e; /* Underline for Section Titles */
+    background-color: #b98c0e;      /* Underline for Section Titles */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
+.block-separator--long {
+background-color: #efb10db5; 
+width: 300px;
+}
 /* --------------------------Media section-----------*/
 
 .embed-responsive {
-    width: 85%;    /* Maintain balanced spacing between videos*/
+    width: 85%;                   /* Maintain balanced spacing between videos*/
     align-items: centre;
 }
 
@@ -498,6 +506,9 @@ footer .row {
     justify-content: center;
     text-align: center;
 }
+footer .row .popoverlink {               /* vertical centering of popoverlinks in footer*/
+padding: 5px 0px;
+}
 
 #footer-details {
     height: 7vh;
@@ -509,14 +520,9 @@ footer .row {
     color: white;
 }
 
-/*.fixed-bottom  ul {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}*/
+.fixed-bottom  a {
+color:white;
+}
 
 p {
     margin-bottom: 4px;
