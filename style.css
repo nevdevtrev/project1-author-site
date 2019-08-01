@@ -186,6 +186,7 @@ body {
     margin-right: auto;
     width: 50px;
 }
+
 /*.section6-backdrop {
     height: auto;
     width: 100%;
@@ -226,7 +227,8 @@ body {
     font-family: 'Fascinate', cursive;
     text-align: center;
     color: white;
-    font-size: 3rem;             /* styling each section title*/
+    font-size: 3rem;
+    /* styling each section title*/
     margin-bottom: 46px;
     margin-top: 14px;
 }
@@ -234,7 +236,8 @@ body {
 .subsection-title {
     font-family: 'Aclonica', sans-serif;
     text-align: center;
-    color: white;                /* styling each subsection title*/
+    color: white;
+    /* styling each subsection title*/
     font-size: 34px;
     margin-bottom: 110px;
     margin-top: 14px;
@@ -282,6 +285,8 @@ div.desc {
     padding: 15px;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Jacques Francois', serif;
+    color: #928989;
 }
 
 
@@ -325,19 +330,22 @@ div.desc {
     border: 0;
     width: 200px;
     height: 5px;
-    background-color: #b98c0e;      /* Underline for Section Titles */
+    background-color: #b98c0e;
+    /* Underline for Section Titles */
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .block-separator--long {
-background-color: #efb10db5; 
-width: 300px;
+    background-color: #efb10db5;
+    width: 300px;
 }
+
 /* --------------------------Media section-----------*/
 
 .embed-responsive {
-    width: 85%;                   /* Maintain balanced spacing between videos*/
+    width: 85%;
+    /* Maintain balanced spacing between videos*/
     align-items: centre;
 }
 
@@ -352,7 +360,7 @@ form .contact-form-bg {
     margin-top: -47px;
     margin-bottom: 9px;
     font-weight: 300px;
-/*    padding-left: 10px;
+    /*    padding-left: 10px;
     padding-right: 10px;*/
 }
 
@@ -505,8 +513,10 @@ footer .row {
     justify-content: center;
     text-align: center;
 }
-footer .row .popoverlink {               /* vertical centering of popoverlinks in footer*/
-padding: 5px 0px;
+
+footer .row .popoverlink {
+    /* vertical centering of popoverlinks in footer*/
+    padding: 5px 0px;
 }
 
 #footer-details {
@@ -519,8 +529,8 @@ padding: 5px 0px;
     color: white;
 }
 
-.fixed-bottom  a {
-color:white;
+.fixed-bottom a {
+    color: white;
 }
 
 p {
@@ -563,9 +573,9 @@ p {
         /* To keep navbar from overlapping section titles */
     }
     .navbar-brand img {
-    width: 20%;
-    height: auto;
-}
+        width: 20%;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -615,14 +625,15 @@ p {
         -webkit-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
     }
-    
-.navbar-brand img {
-    width: 20%;
-    height: auto;
-}
+
+    .navbar-brand img {
+        width: 20%;
+        height: auto;
+    }
     div.gallery img {
         width: 70%;
-        height: auto;            /*Keep books framed well on larger screens*/
+        height: auto;
+        /*Keep books framed well on larger screens*/
         padding: 30px 30px;
     }
 
@@ -644,7 +655,5 @@ p {
     background-color: black;
     font-size: 14px;
 }
+
 /*----------------------------------------------------------------------*/
-
-
-
