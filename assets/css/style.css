@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Almendra+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Aclonica&display=swap');
-
 body {
     position: relative;
+    font-size: 16px;
     font-family: 'Amatic SC', cursive;
 }
 
@@ -12,9 +8,8 @@ body {
 
 .section1-backdrop {
     height: 100vh;
-    /* background: url("assets/media/author desk large.png") no-repeat center center fixed; */
-    background-image: url("assets/media/author desk large.png");
-    background-position: top 160px bottom 100px;
+    background-image: url("/assets/media/author-desk-large.png");
+   background-position: top 160px bottom 100px;
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*    mix-blend-mode: multiply;*/
+
 }
 
 
@@ -32,28 +27,14 @@ body {
     padding-bottom: 100px;
 }
 
-/*--------------------- Centre Mailing-list toast box -------*/
+/*-- Centre Mailing-list toast box --*/
 
 .section1-backdrop .row {
     padding: 52px 0;
+    /*-- vertical centering --*/
 }
 
-.section4-backdrop {
-    height: 100vh;
-    background: url("assets/media/CTBWL-kindle-non-transparent.png") no-repeat center center fixed;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-/* -- -----------------------------------------------------NAVBAR STUFF --*/
+/* -- NAVBAR STUFF --*/
 
 .navbar {
     padding: 0px 10px;
@@ -66,11 +47,13 @@ body {
 
 }
 
+/*-- to keep brand image scalable and of appropriate size --*/
+
 .navbar-brand img {
     width: 27%;
     height: auto;
-    /* to keep brand image scalable and of appropriate size*/
     padding: 0;
+
 }
 
 .navbar-dark {
@@ -89,7 +72,7 @@ body {
     -o-transition: all 0.25s ease-in-out;
 }
 
-/* change the navbar brand and text color */
+/*-- change the navbar brand and text color --*/
 
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-text {
@@ -101,17 +84,10 @@ body {
     color: #9da2a1;
 }
 
-/* change the navbar link color */
+/*-- change the color of active or hovered navbar links --*/
 
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 1);
-
-}
-
-/* change the color of active or hovered navbar links */
-
-.navbar-dark .nav-item.active .nav-link {
-    color: rgba(0, 0, 0, 1);
+.navbar-dark .nav-item:active .nav-link {
+    color: #856404;
     text-shadow: 0px -1px 0px #f8f9fa;
 }
 
@@ -120,7 +96,13 @@ body {
     text-shadow: 0px -1px 0px #f8f9fa;
 }
 
-/*----------------Fontawesome styling--------------*/
+/*-- keeps the active selected link color seperate to the rest --*/
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #dab23e;
+}
+
+/*-- Fontawesome styling --*/
 
 .fa-user-secret:before,
 .fa-clipboard-list:before,
@@ -135,7 +117,9 @@ body {
 .fa-home:before {
     content: "\f015";
     font-size: 21px;
+    color: white;
 }
+
 
 .fa-user-secret:after,
 .fa-clipboard-list:after,
@@ -147,25 +131,16 @@ body {
     color: #856404;
 }
 
-/* change the navbar-toggler transparency level */
+/*-- change the navbar-toggler transparency level --*/
 
 .navbar-toggler {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1.25rem;
-    /* round out the button and grey it*/
+    /*-- round out the button and grey it --*/
 }
 
-.shadow {}
+/* -- CONTAINERS --*/
 
-.navlink {
-    text-align=center;
-    text-shadow: 3px 2px white;
-}
-
-
-
-
-/* -- ----------------------------------------------------- CONTAINERS --*/
 
 #section3,
 #section4,
@@ -187,22 +162,10 @@ body {
     width: 50px;
 }
 
-/*.section6-backdrop {
-    height: auto;
-    width: 100%;
-    background: url("assets/media/blog.png") no-repeat center center fixed;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
 
-#section8 h3 {
+#section8 p {
     margin: auto;
+    font-size: 2.5rem;
 }
 
 
@@ -217,27 +180,26 @@ body {
     background: black;
 }
 
-/* -- ----------------------Text section ---------------------- --*/
+/* -- TEXT SECTION --*/
 
-/*.uppercase {
-    text-transform: uppercase
-}*/
+/* styling each section title*/
 
 .section-title {
     font-family: 'Fascinate', cursive;
     text-align: center;
     color: white;
     font-size: 3rem;
-    /* styling each section title*/
     margin-bottom: 46px;
     margin-top: 14px;
 }
+
+/* styling each subsection title*/
 
 .subsection-title {
     font-family: 'Aclonica', sans-serif;
     text-align: center;
     color: white;
-    /* styling each subsection title*/
+
     font-size: 34px;
     margin-bottom: 110px;
     margin-top: 14px;
@@ -259,13 +221,23 @@ body {
 .section-p {
     font-size: 40px;
     color: #e7edf3;
-    text-align: left;
+    text-align: center;
     font-family: 'Amatic SC', cursive;
     margin-bottom: 30px;
     padding: 20px;
 }
 
-/* -- ----------------------Books Gallery section ---------------------- --*/
+/*-- sets max-width for all sections so content doesnt spread to edges on lg screens --*/
+
+.container-width {
+    max-width: 1200px;
+}
+
+.container-width-contact {
+    max-width: 800px;
+}
+
+/* -- BOOKS GALLERY STYLING/RESPONSIVENESS --*/
 
 div.gallery {
     border: none;
@@ -284,17 +256,11 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: 'Jacques Francois', serif;
     color: #928989;
 }
 
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 100%;
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -304,9 +270,10 @@ div.desc {
         padding: 0;
     }
 
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+
+    div.desc {
+        font-size: 1.5rem;
+
     }
 }
 
@@ -317,7 +284,13 @@ div.desc {
         width: 24.999%;
     }
 
-
+    /*    div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Jacques Francois', serif;
+    color: #928989;
+}*/
     .clearfix:after {
         content: "";
         display: table;
@@ -326,12 +299,13 @@ div.desc {
 
 }
 
+/*-- Underline for Section Titles --*/
+
 .block-separator {
     border: 0;
     width: 200px;
     height: 5px;
     background-color: #b98c0e;
-    /* Underline for Section Titles */
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -343,10 +317,12 @@ div.desc {
 
 /* --------------------------Media section-----------*/
 
+/* Maintain balanced spacing between videos*/
+
 .embed-responsive {
     width: 85%;
-    /* Maintain balanced spacing between videos*/
     align-items: centre;
+    margin: 32px;
 }
 
 /* --------------------------Contact Form section-----------*/
@@ -435,8 +411,6 @@ button:not(:disabled) {
 }
 
 .col-6,
-/*.col-12,*/
-
 .col-4,
 .col-3 {
     padding: 0;
@@ -479,14 +453,8 @@ button:not(:disabled) {
 footer {
     background-color: #000000;
     color: #adb5bd;
-    max-height: 100px;
+    max-height: 200px;
     margin: 0;
-
-}
-
-Ul {
-    margin-bottom: 0;
-    /* to help centre footer icons */
 }
 
 
@@ -509,25 +477,29 @@ Ul {
     background: #721c24;
 }
 
+
 footer .row {
     justify-content: center;
     text-align: center;
 }
 
+/*-- vertical centering of popoverlinks in footer --*/
+
 footer .row .popoverlink {
-    /* vertical centering of popoverlinks in footer*/
-    padding: 5px 0px;
+    padding: 12px 0px;
 }
 
-#footer-details {
-    height: 7vh;
-    padding: 0px;
-    align-items: center;
+/*-- vertical centering of social links with popoverlinks --*/
+
+.list-inline {
+    padding: 5px;
 }
 
-#white {
-    color: white;
+Ul {
+    margin-bottom: 0;
 }
+
+/*-- color the footer links white */
 
 .fixed-bottom a {
     color: white;
@@ -636,6 +608,10 @@ p {
         /*Keep books framed well on larger screens*/
         padding: 30px 30px;
     }
+    
+    .embed-responsive {
+    margin: 67px;
+}
 
 }
 

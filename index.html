@@ -5,55 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-  <script src="https://kit.fontawesome.com/43bc97a9d0.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Almendra+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Aclonica&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <title>Neville Sexton</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <!-----------------------------NAVBAR--------------------------------------------------->
+  <!-- NAVBAR -->
+
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/media/author.png" alt="Logo"><i class="fab fa-angrycreative"></i>
+      <img src="assets/media/author.png" alt="Logo"><i class="fab fa-angrycreative" aria-hidden="true"></i>
   </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="navigation button">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li><a class="nav-link" href="#"><i class="fa fa-home"></i></a>
+        <li><a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section3"><i class="fas fa-book-reader"></i>Books
+          <a class="nav-link" href="#section3"><i class="fas fa-book-reader" aria-hidden="true"></i>Books
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section4">
-            <i class="fas fa-photo-video"></i>Media</a>
+            <i class="fas fa-photo-video" aria-hidden="true"></i>Media</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section5"><i class="fas fa-at"></i>Contact</a>
+          <a class="nav-link" href="#section6"><i class="fas fa-blog" aria-hidden="true"></i>Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section6"><i class="fas fa-blog"></i>Blog</a>
+          <a class="nav-link" href="#section7"><i class="fas fa-clipboard-list" aria-hidden="true"></i>Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section7"><i class="fas fa-clipboard-list"></i>Events</a>
+          <a class="nav-link" href="#section8"><i class="fas fa-user-secret" aria-hidden="true"></i>About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section8"><i class="fas fa-user-secret"></i>About</a>
+          <a class="nav-link" href="#section5"><i class="fas fa-at" aria-hidden="true"></i>Contact</a>
         </li>
       </ul>
     </div>
@@ -61,314 +59,303 @@
 
 
 
-  <!-----------------------------Mailing List Building + Landing Page------------------------------------------->
+  <!-- LANDING PAGE + EMAIL SUBSCRIPTION TOAST -->
 
   <div class="container-fluid section1-backdrop">
-    <div class="row">
+    <div class="row no gutter">
       <div class="col-12">
-        <div class="container mailing-list justify-content-center text-center">
-
-          <div class="container">
-            <div class="toast" data-autohide="false">
-              <div class="toast-header">
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-              </div>
-              <div class="toast-body">
-
-                <h3 class="uppercase">join the mailing list for updates and receive your <u>free</u> neville sexton book</h3>
-                <form action="#">
-                  <label for="email"></label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email" required="true">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input uppercase" type="checkbox" name="remember" required="true"> Happy to supply
+        <div class="mailing-list justify-content-center text-center">
+          <div class="toast" data-autohide="false">
+            <div class="toast-header">
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="close">&times;</button>
+            </div>
+            <div class="toast-body">
+              <h3 class="uppercase">join the mailing list for updates and receive your <u>free</u> neville sexton book</h3>
+              <form action="#">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email" required="true">
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input class="form-check-input uppercase" type="checkbox" name="remember" required="true" aria-label="checkbox"> Happy to supply?
                     </label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">get your free book</button>
-                </form>
-
-              </div>
+                </div>
+                <button type="submit" class="btn btn-primary" aria-label="submit your email">get your free book</button>
+              </form>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 
 
-  <!-------------------------- section 3 Books   ---------------------------------------------->
+  <!-- SECTION 3 BOOKS -->
 
-  <div class="container-fluid" id="section3">
+  <section class="container-fluid" id="section3">
     <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-book-reader"></i>Books</P>
+      <div class="col-12 section-title">
+        <p><i class="fas fa-book-reader" aria-hidden="true"></i>Books</P>
         <hr class="block-separator">
       </div>
     </div>
-    <div class="row no gutter">
-      <div class="col">
-        <div class="responsive">
+    <div class="container container-width">
+      <div class="row no gutter">
+        <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="gallery">
-            <a target="_blank" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton-ebook/dp/B017JFUTCW/ref=sr_1_1?keywords=craig+the+boy+who+lives&qid=1564610701&s=gateway&sr=8-1">
-      <img src="assets/media/Craig kindle 3D new.png" alt="Craig The Boy Who Lives - Kindle Edition" width="509" height="885">
-    </a>
-            <div class="desc">'This is a beautiful, unforgettably moving story about the true meaning of Life and Death... and what makes sense of both - Love.' - Gabriel Byrne, Hollywood Actor.</div>
-          <div class="desc uppercase">-Kindle Edition</div>
+            <a target="_blank" rel="noopener" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton-ebook/dp/B017JFUTCW/ref=sr_1_1?keywords=craig+the+boy+who+lives&qid=1564610701&s=gateway&sr=8-1" aria-label="link to Craig The Boy Who Lives book">
+      <img src="assets/media/Craig-kindle-3D-new.png" alt="Craig The Boy Who Lives - Kindle Edition" width="509" height="885">
+            </a>
+            <div class="desc">'This is a beautiful, unforgettably moving story about the true meaning of Life and Death... and what makes sense of both - Love.' - Gabriel Byrne, Hollywood Actor.
+            </div>
+            <div class="desc uppercase">- Kindle Edition</div>
           </div>
         </div>
-
-
-        <div class="responsive">
+        <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="gallery">
-            <a target="_blank" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton/dp/0717148629/ref=sr_1_2?keywords=craig+the+boy+who+lives&qid=1564610181&s=gateway&sr=8-2">
+            <a target="_blank" rel="noopener" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton/dp/0717148629/ref=sr_1_2?keywords=craig+the+boy+who+lives&qid=1564610181&s=gateway&sr=8-2" aria-label="link to Craig The Boy Who Lives book">
       <img src="assets/media/Craiggill3D.png" alt="Craig The Boy Who Lives - Gill Publishers" width="509" height="891">
-    </a>
-            <div class="desc">'This is a beautiful, unforgettably moving story about the true meaning of Life and Death... and what makes sense of both - Love.' - Gabriel Byrne, Hollywood Actor. </div>
-          <div class="desc uppercase">-Publisher Paperback Edition</div>
+            </a>
+            <div class="desc">'This is a beautiful, unforgettably moving story about the true meaning of Life and Death... and what makes sense of both - Love.' - Gabriel Byrne, Hollywood Actor.
+            </div>
+            <div class="desc uppercase">- Publisher Paperback Edition</div>
           </div>
         </div>
-
-        <div class="responsive">
+        <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="gallery">
-            <a target="_blank" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton-ebook/dp/B017JFUTCW/ref=sr_1_1?keywords=craig+the+boy+who+lives&qid=1564608884&s=gateway&sr=8-1">
+            <a target="_blank" rel="noopener" href="https://www.amazon.co.uk/Craig-Boy-Lives-Neville-Sexton-ebook/dp/B017JFUTCW/ref=sr_1_1?keywords=craig+the+boy+who+lives&qid=1564608884&s=gateway&sr=8-1" aria-label="link to Let grief be a fallen leaf book">
       <img src="assets/media/let-grief-be-a-fallen-leaf13D.png" alt="Let Grief Be A Fallen Leaf" width="509" height="891">
-    </a>
-            <div class="desc">A compendium of heartfelt, poignant articles from the author's time as a Child Loss Editor with BellaOnline</div>
+          </a>
+            <div class="desc">A compendium of heartfelt, poignant articles from the author's time as a Child Loss Editor with BellaOnline
+            </div>
           </div>
         </div>
-
-        <div class="responsive">
+        <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="gallery">
-            <a target="_blank" href="http://www.books.ie/there-s-no-place-like-home-at-christmas">
-      <img src="assets/media/theres no place3D.png" alt="There's No Place Like Home - Mercier Press" width="505" height="891">
-    </a>
-            <div class="desc">In aid of The Jack & Jill Foundation. A collection of new Christmas stories written by well known Irish personalities including Maeve Binchy, Niall Quinn, Cathy Kelly, Eddie Hobbs, Patrick Hickey, Judi Curtin and - Neville Sexton?</div>
+            <a target="_blank" href="http://www.books.ie/there-s-no-place-like-home-at-christmas" rel="noopener" aria-label="link to There's No Place Like Home at Christmas book">
+      <img src="assets/media/theres-no-place3D.png" alt="There's No Place Like Home - Mercier Press" width="505" height="891">
+             </a>
+            <div class="desc">In aid of The Jack & Jill Foundation. A collection of new Christmas stories written by well known Irish personalities including Maeve Binchy, Niall Quinn, Cathy Kelly, Eddie Hobbs, Patrick Hickey, Judi Curtin and - Neville Sexton?
+            </div>
           </div>
         </div>
-
         <div class="clearfix"></div>
       </div>
     </div>
-  </div>
+    </div>
+  </section>
 
-  <!-------------------------- section 4 Media  ------------------------------------------>
 
-  <div class="container-fluid" id="section4">
+  <!-- SECTION 4 MEDIA -->
+
+  <section class="container-fluid" id="section4">
     <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-photo-video"></i>Media</P>
+      <div class="col-12 section-title">
+        <p><i class="fas fa-photo-video" aria-hidden="true"></i>Media</P>
         <hr class="block-separator">
       </div>
     </div>
-    <div class="row no gutter">
-      <div class="col subsection-title">
-        <p><i class="fas fa-film"></i>Documentaries & Tribute</P>
-        <p class="uppercase section-p">There are two videos presented below. The first is the ABC TV Documentary, Love Never Dies. Influenced by Neville's Book - <a href="https://www.amazon.com/Craig-Boy-Lives-Neville-Sexton/dp/1523841109" alt="Craig The Boy Who Lives" target="_blank">Craig The Boy Who Lives</a>,
-          it follows the authors journey as he seeks to uncover the nature of life, death and eternal love. <br>The second video is a personal tribute put together by Neville for Craig's memorial anniversary</p>
+    <div class="container container-width">
+      <div class="row no gutter">
+        <div class="col-12 subsection-title">
+          <p><i class="fas fa-film" aria-hidden="true"></i>Documentaries & Tribute</P>
+          <p class="uppercase section-p">There are two videos presented below. The first is the ABC TV Documentary, Love Never Dies. Influenced by Neville's Book - <a href="https://www.amazon.com/Craig-Boy-Lives-Neville-Sexton/dp/1523841109" alt="Craig The Boy Who Lives" target="_blank">Craig The Boy Who Lives</a>,
+            it follows the authors journey as he seeks to uncover the nature of life, death and eternal love. <br>The second video is a personal tribute put together by Neville for Craig's memorial anniversary</p>
+        </div>
       </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="container-fluid">
+      <div class="row no gutter">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/nDnJaXiZ1BU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="ABC documentary youtube" class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/nDnJaXiZ1BU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="desc">ABC Documentary - Love Never Dies. Following the death of his son, Neville Sexton searches for what lies beyond the apparent finality of death.</div>
         </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="container-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/8187UMPk6m8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="ABC documentary youtube" class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/8187UMPk6m8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="desc">Personal Tribute to Craig!</div>
         </div>
       </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col subsection-title">
-        <p><i class="far fa-newspaper"></i>In The News</P>
-        <p class="uppercase section-p">The below are some snapshots of various media coverage for - <a href="https://www.amazon.com/Craig-Boy-Lives-Neville-Sexton/dp/1523841109" alt="Craig The Boy Who Lives" target="_blank">Craig The Boy Who Lives</a>. Neville attended a private audience
-          with the Irish President Mary McAleese at Áras an Uachtaráin to mark the launch of the book about his beloved son Craig. The Actor, Gabriel Byrne, was so moved reading Craig's story that he wanted to contribute a personal quote for the books
-          front cover.
-        </p>
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/president mcaleese.jpg" alt="President McAleese meeting" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/gbyrne quote picture.png" alt="Gabriel Byrne Quote" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/book charts.jpg" alt="Book Chart entry 4" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/eason book month.jpg" alt="Eason Book of the Month" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/magazine.jpg" alt="Magazine Article" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/signing books.jpg" alt="Book Launch Signing" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/dave dar book launch.jpg" alt="Brothers Dave and dar" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/bray people.PNG" alt="Bray People Article" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/independent article.PNG" alt="Irish Independent Article" width="100%" height="auto">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="assets/media/rte love never dies.PNG" alt="Love Never Dies" width="100%" height="auto">
-      </div>
-    </div>
-  </div>
-
-
-  <!-------------------------- section 5 Contact Form   ---------------------------------------------->
-
-  <div class="container-fluid" id="section5">
-    <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-at"></i>Contact</p>
-        <hr class="block-separator">
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col">
-        <div class="d-none d-lg-block">
-          <h3 class="contact-header uppercase text-center">Are you a Publisher?</h3>
-          <h4 class="contact-header uppercase text-center">..Perhaps an agent interested in my work?</h4>
-          <br>
-          <h5 class="uppercase text-center">If you believe you have a strong case for taking my work to another level - eg. with greater print distribution - then please send me your proposal details below and I will respond as soon as possible.
-          </h5>
+      <div class="row no gutter">
+        <div class="col-12 subsection-title">
+          <p><i class="far fa-newspaper" aria-hidden="true"></i>In The News</P>
+          <p class="uppercase section-p">The below are some snapshots of various media coverage for - <a href="https://www.amazon.com/Craig-Boy-Lives-Neville-Sexton/dp/1523841109" alt="Craig The Boy Who Lives" target="_blank">Craig The Boy Who Lives</a>. Neville attended a private
+            audience with the Irish President Mary McAleese at Áras an Uachtaráin to mark the launch of the book about his beloved son Craig. The Actor, Gabriel Byrne, was so moved reading Craig's story that he wanted to contribute a personal quote for
+            the books front cover.
+          </p>
         </div>
-        <div class="d-block d-lg-none">
-          <!-- visible only on smaller devices -->
-          <h3 class="contact-header uppercase text-center">Wish to get in touch?</h3>
-          <h5 class="uppercase text-center">Just fill out the below...
-          </h5>
+      </div>
+      <div class="row no gutter">
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/president-mcaleese.jpg" alt="President McAleese meeting" class="img-fluid">
         </div>
-        <div class="contact-form-center">
-          <form>
-            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-            <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Proposal/Query" required></textarea>
-            <div class="form-row text-center">
-              <div class="col">
-                <button type="submit" class="btn btn-secondary">Contact Me</button>
-              </div>
-            </div>
-          </form>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/gbyrne-quote-picture.png" alt="Gabriel Byrne Quote" class="img-fluid">
         </div>
-
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/book-charts.jpg" alt="Book Chart entry 4" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/eason-book-month.jpg" alt="Eason Book of the Month" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/signing-books.jpg" alt="Book Launch Signing" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/dave-dar-book-launch.jpg" alt="Brothers Dave and dar" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/bray-people.PNG" alt="Bray People Article" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/independent-article.PNG" alt="Irish Independent Article" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assets/media/rte-love-never-dies.PNG" alt="Love Never Dies" class="img-fluid">
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-------------------------- section 6 Blog   ---------------------------------------------->
 
-  <div class="container-fluid section6-backdrop" id="section6">
+  <!-- SECTION 6 BLOG -->
+
+  <section class="container-fluid" id="section6">
     <div class="row no gutter">
       <div class="col-12 section-title">
-        <div class="container-fluid">
-          <p><i class="fas fa-blog"></i>Blog</p>
-        <img src="assets/media/blog.png" alt="Irish Independent Article" width="100%" height="auto">
-       </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-------------------------- section 7 Events   ---------------------------------------------->
-
-  <div class="container-fluid" id="section7">
-    <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-clipboard-list"></i>Events</p>
-        <hr class="block-separator">
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col subsection-title">
-        <p><i class="fas fa-chalkboard-teacher"></i>Presentations</P>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            SE Writer's Retreat, Wexford Town
-            <span class="badge badge-primary badge-pill">11/09/2019</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Hook Writer's Festival, Hook Lighthouse
-            <span class="badge badge-primary badge-pill">23/10/2019</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Galway Christmas Convention
-            <span class="badge badge-primary badge-pill">18/12/2019</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-      <hr class="block-separator--long">
-    <div class="row no gutter">
-      <div class="col subsection-title">
-        <p><i class="fas fa-signature"></i>Book Signings</P>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Byrnes Bookshop, 2pm, Wexford Town
-            <span class="badge badge-primary badge-pill">28/02/2020</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Kilkenny Bookshop, 1pm, Kilkenny
-            <span class="badge badge-primary badge-pill">21/03/2020</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Eason Killarney, 1pm, Co.Kerry
-            <span class="badge badge-primary badge-pill">12/02/2020</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row no gutter">
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-        <div class="container-fluid">
-
+        <div class="container container-width">
+          <p><i class="fas fa-blog" aria-hidden="true"></i>Blog</p>
+          <img src="assets/media/blog.png" alt="Irish Independent Article" class="img-fluid">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-------------------------- section 8 About   ---------------------------------------------->
 
-  <div class="container-fluid" id="section8">
+
+  <!-- SECTION 7 EVENTS -->
+
+  <section class="container-fluid" id="section7">
     <div class="row no gutter">
-      <div class="col section-title">
-        <p><i class="fas fa-user-secret"></i>About</p>
+      <div class="col-12 section-title">
+        <p><i class="fas fa-clipboard-list" aria-hidden="true"></i>Events</p>
         <hr class="block-separator">
       </div>
     </div>
-    <div class="row no gutter">
-      <div class="col-12">
-        <h3 class="uppercase"> Neville Sexton was born in 1976 and grew up in Bray, Co. Wicklow, Ireland. His first published work was as a contributing short story author alongside Maeve Binchy, Cathy Kelly and other noted authors in the charity Christmas book, There’s No
-          Place like Home at Christmas (2010, Mercier Press).<img src="assets/media/70s nev alone sketch.png" alt="Neville Sexton Pic"> His first book, Craig The Boy Who Lives (2011, Gill & Macmillan), emotionally and poignantly reflects upon his son’s
-          short beautiful life, his tragic death and the author’s belief in his son’s contact from beyond. Stemming from this book a featured TV documentary, Love Never Dies, was shown and viewed by millions on ABC Australia and RTE Ireland. Craig The
-          Boy Who Lives was also presented to the Irish President Mary McAleese, and the well-known Hollywood actor Gabriel Byrne wrote of the book – ‘This is a beautiful, unforgettably moving story about the true meaning of Life and Death… and what makes
-          sense of both - Love.’
-          <br>
-          <h3>
-            Alongside his non-fiction work Neville is also a keen fiction writer, focussing on YA Science Fiction & Fantasy. His first such book, "The Outsiders", is due for release January 2020.
-          </h3>
-        </h3>
+    <div class="container container-width">
+      <div class="row no gutter">
+        <div class="col-12 subsection-title">
+          <p><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>Presentations</P>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              SE Writer's Retreat, Wexford Town
+              <span class="badge badge-primary badge-pill">11/09/2019</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Hook Writer's Festival, Hook Lighthouse
+              <span class="badge badge-primary badge-pill">23/10/2019</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Galway Christmas Convention
+              <span class="badge badge-primary badge-pill">18/12/2019</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="block-separator--long">
+      <div class="row no gutter">
+        <div class="col-12 subsection-title">
+          <p><i class="fas fa-signature" aria-hidden="true"></i>Book Signings</P>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Byrnes Bookshop, 2pm, Wexford Town
+              <span class="badge badge-primary badge-pill">28/02/2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Kilkenny Bookshop, 1pm, Kilkenny
+              <span class="badge badge-primary badge-pill">21/03/2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Eason Killarney, 1pm, Co.Kerry
+              <span class="badge badge-primary badge-pill">12/02/2020</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-------------------------- FOOTER  -------------->
+  <!-- SECTION 8 ABOUT -->
+
+  <section class="container-fluid" id="section8">
+    <div class="row no gutter">
+      <div class="col-12 section-title">
+        <p><i class="fas fa-user-secret" aria-hidden="true"></i>About</p>
+        <hr class="block-separator">
+      </div>
+    </div>
+    <div class="container container-width">
+      <div class="row no gutter">
+        <div class="col-12">
+          <p class="uppercase"> <img src="assets/media/70s-nev-alone-sketch.png" alt="Neville Sexton Pic">Neville Sexton was born in 1976 and grew up in Bray, Co. Wicklow, Ireland. His first published work was as a contributing short story author alongside Maeve Binchy, Cathy
+            Kelly and other noted authors in the charity Christmas book, There’s No Place like Home at Christmas (2010, Mercier Press). His first book, Craig The Boy Who Lives (2011, Gill & Macmillan), emotionally and poignantly reflects upon his son’s
+            short beautiful life, his tragic death and the author’s belief in his son’s contact from beyond. Stemming from this book a featured TV documentary, Love Never Dies, was shown and viewed by millions on ABC Australia and RTE Ireland. Craig The
+            Boy Who Lives was also presented to the Irish President Mary McAleese, and the well-known Hollywood actor Gabriel Byrne wrote of the book – ‘This is a beautiful, unforgettably moving story about the true meaning of Life and Death… and what
+            makes sense of both - Love.’
+            <br>
+            <p>
+              Alongside his non-fiction work Neville is also a keen fiction writer, focussing on YA Science Fiction & Fantasy. His first such book, "The Outsiders", is due for release January 2020.
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 CONTACT FORM -->
+
+  <section class="container-fluid" id="section5">
+    <div class="row no gutter">
+      <div class="col-12 section-title">
+        <p><i class="fas fa-at" aria-hidden="true"></i>Contact</p>
+        <hr class="block-separator">
+      </div>
+    </div>
+    <div class="container container-width-contact">
+      <div class="row no gutter">
+        <div class="col-12">
+          <div class="d-none d-lg-block">
+            <h3 class="contact-header uppercase text-center">Are you a Publisher?</h3>
+            <h4 class="contact-header uppercase text-center">..Perhaps an agent interested in my work?</h4>
+            <br>
+            <h5 class="uppercase text-center">If you believe you have a strong case for taking my work to another level - eg. with greater print distribution - then please send me your proposal details below and I will respond as soon as possible.
+            </h5>
+          </div>
+          <div class="d-block d-lg-none">
+            <!-- visible only on smaller devices -->
+            <h3 class="contact-header uppercase text-center">Wish to get in touch?</h3>
+            <h5 class="uppercase text-center">Just fill out the below...
+            </h5>
+          </div>
+          <div class="contact-form-center">
+            <form>
+              <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" aria-label="Enter your name" required />
+              <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" aria-label="Enter your email" required />
+              <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Proposal/Query" required></textarea>
+              <div class="form-row text-center">
+                <div class="col-12">
+                  <button type="submit" class="btn btn-secondary" aria-label="Submit your details">Contact Me</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
 
   <footer class="container-fluid fixed-bottom">
     <div class="row">
@@ -415,62 +402,15 @@
         <span><a href="#" data-toggle="popover" data-placement="top" data-trigger="focus" title="Copyright" data-content="This site is designed and built by Neville Sexton  July 2019">© Neville Sexton</a></span>
       </div>
     </div>
+    </div>
   </footer>
 
-  <script>
-    $(document).ready(function() {
-      $('.toast').toast('show');  //For Toast mailing-list
-    });
-  
-</script>
+  <script src="https://kit.fontawesome.com/43bc97a9d0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/author.js"></script>
 
-
-  <script>
-    /*-- ---The below is for smooth scrolling - details from css-tricks.com------ --*/
-
-    // Select all links with hashes
-    $('a[href*="#"]')
-      // Remove links that don't actually link to anything
-      .not('[href="#"]')
-      .not('[href="#0"]')
-      .click(function(event) {
-        // On-page links
-        if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-          location.hostname == this.hostname
-        ) {
-          // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-            // Only prevent default if animation is actually gonna happen
-            event.preventDefault();
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-              }
-              else {
-                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              };
-            });
-          }
-        }
-      });
- </script>
-  
-  <script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   /* Script for popover in footer*/
-});
-</script>
 </body>
 
 </html>
