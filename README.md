@@ -20,13 +20,11 @@ You can see the published live site [here] (https://nevdevtrev.github.io/project
 ## Technologies
 
 1. HTML
-2. Boostrap 4.3.1
+2. Boostrap
 3. Flexbox Grid System
 4. CSS3
 5. JavaScript
-6. MS Powerpoint - for image creations
-7. Fontawesome
-8. Googlefonts
+
 
 ## Design - UX
 

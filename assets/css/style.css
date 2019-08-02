@@ -8,7 +8,7 @@ body {
 
 .section1-backdrop {
     height: 100vh;
-    background-image: url("/assets/media/author-desk-large.png");
+    background-image: url("../media/author-desk-large.png");
    background-position: top 160px bottom 100px;
     position: relative;
     -webkit-background-size: cover;
