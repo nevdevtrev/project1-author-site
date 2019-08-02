@@ -9,14 +9,6 @@ an email subscriber list based on a free book offering when email details are su
 It's designed to be responsive on all devices. 
 
 
-## Deployment
-
-The site is hosted on GithHub Pages at https://github.com/nevdevtrev/project1-author-site.git
-Should you wish to clone this simply use git clone https://github.com/nevdevtrev/project1-author-site.git 
-in your terminal. 
-
-You can see the published live site [here] (https://nevdevtrev.github.io/project1-author-site/)
-
 ## Technologies
 
 1. HTML
@@ -39,6 +31,9 @@ The site is designed as a mobile first single, multi-sectioned, page with top na
 blog, contact and author information. Sections are reached through a smooth scrollspy effect, again keeping the user
 experience as simple and pleasant as possible. I've also utilised a fixed footer for quick access to author social links.
 
+The use of max-width containers was put in place to allow for a better visual experience for visitors on larger screens. The resulting narrower stream
+of content gives a far better user experience for readability and content presentation.
+
 ### Design Features
 
 The core features implemented were built upont the flexbox grid layout system and include: bootstrap toast input, bootstrap popovers 
@@ -48,6 +43,59 @@ The core features implemented were built upont the flexbox grid layout system an
 
 The main expansion of the current site will be to build and link an SQL database backend to the current email subscription toast. Also the 
 intention will be to modify the current book presentations into a carousel as more and more books become availble for sale. 
+
+
+### UX - First Time Visitor
+
+Q: As a first time visitor how easy is it for me to navigate the site and find things of interest to me??
+A: The new visitor to the site will immediately be presented with two things: firstly a vibrant landing page rich with author details and images, and secondly 
+   a great FREE BOOK offer if they signup for author updates. This is a great UX as, in the first instance it's an immediate presentation of, and feel for, the 
+   author's life and work, and in the second instance, as the typical visitor is a reader, a free book will be of direct interest to them. 
+   
+   The new visitor can fluidly move througout all the content by clicking the relevant navigation bar links which will smoothly roll them to their required section.
+   This, again, is a nice user experience. Along with the fixed navbar the visitor is presented with a permanent footer (on all devices) containing all the authors 
+   social media links. This gives them an ever-present and quick access to these services. Any section the visitor is currently in is highlighted in the 
+   navigation bar too, so as a visual cue or reminder this helps the user know where they are at any time
+
+   All input forms are deigned to ensure the user is assisted in completing them correctly. The combined use of required fields, enforced syntax and popup 
+   prompts will gently guide the user to complete their task.
+
+### UX - Returning Visitor
+
+Q: As a returning visitor is the site efficiently structured for quick access to favourites, and contactibility??
+A: The returning visitor can close or simply ignore the initally presented subscriber form on the landing page. All navigation links are available at all times
+   so navigation is never hampered or impeded. The use of fixed footer and fixed navigation bar, with section-highlights, makes the repeat use of the site
+   very easy for the returning visitor to navigate with speed and assuredness. Quick click of the contact link (or social links) on the page is all 
+   that's required for the visitor to communicate with the author.
+   
+
+## Deployment
+
+The site is hosted on GithHub Pages at https://github.com/nevdevtrev/project1-author-site.git and is built from the master branch. The Master
+branch was created in the repository by:
+
+1. On GitHub, navigate to your GitHub Pages site's repository.
+2. Under your repository name, click  Settings.
+3. Use the Select source drop-down menu to select master as your GitHub Pages publishing source.
+4. Click Save
+
+Should you wish to clone this simply:
+
+1. On GitHub, navigate to the main page of the repository.
+2. Under the repository name, click Clone or download.
+3. In the Clone with HTTPs section, click the copy icon to copy the clone URL for the repository.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 2. ie. git clone https://github.com/nevdevtrev/project1-author-site.git
+7. Press Enter. Your local clone will be created.
+
+Cloning a repository to GitHub Desktop:
+
+1. On GitHub, navigate to the main page of the repository.
+2. Under your repository name, click the download icon to clone your repository in Desktop. 
+3. Follow the prompts in GitHub Desktop to complete the clone. 
+
+You can see the published live site [here](https://nevdevtrev.github.io/project1-author-site/)
 
 ## Testing
 
@@ -66,9 +114,9 @@ losing the authorsite.
 Popover links have been tested so that they appear on top (data-placement="top") and that they close (data-trigger="focus") when clicked 
 outside the element. 
 
-The final layout was tested across multiple devices (using the developer's tool (chrome and firefox)) and on a variety of browsers. 
-Media queries have been used where necessary for various layout tweeks and preferences for larger screens. In some cases these have been 
-used so that certain columns and divs are only visible on larger screens, while in other circumstances they're used for simple 
+The final layout was tested across multiple devices (using the developer's tool (chrome and firefox)) and on a variety of browsers (Firefox, 
+Internet Explorer, Google chrome, Safari and Opera). Media queries have been used where necessary for various layout tweeks and preferences for larger screens. 
+In some cases these have been used so that certain columns and divs are only visible on larger screens, while in other circumstances they're used for simple 
 formatting variations. 
 
 
