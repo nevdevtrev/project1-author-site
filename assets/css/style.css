@@ -5,11 +5,10 @@ body {
 }
 
 
-
 .section1-backdrop {
     height: 100vh;
     background-image: url("../media/author-desk-large.png");
-   background-position: top 160px bottom 100px;
+ /*  background-position: top 160px bottom 100px;*/
     position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,11 +20,6 @@ body {
 
 }
 
-
-.bg-black .row {
-    background: black;
-    padding-bottom: 100px;
-}
 
 /*-- Centre Mailing-list toast box --*/
 
@@ -156,12 +150,6 @@ body {
     padding-bottom: 20vh;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-}
-
 
 #section8 p {
     margin: auto;
@@ -169,10 +157,10 @@ body {
 }
 
 
-#section8 .col-12 {
+/*#section8 .col-12 {
     padding-bottom: 20vh;
 }
-
+*/
 .col-lg-4,
 .col-md-6,
 .col-sm-12 {
@@ -230,7 +218,7 @@ body {
 /*-- sets max-width for all sections so content doesnt spread to edges on lg screens --*/
 
 .container-width {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .container-width-contact {
@@ -284,13 +272,6 @@ div.desc {
         width: 24.999%;
     }
 
-    /*    div.desc {
-    padding: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Jacques Francois', serif;
-    color: #928989;
-}*/
     .clearfix:after {
         content: "";
         display: table;
@@ -315,17 +296,16 @@ div.desc {
     width: 300px;
 }
 
-/* --------------------------Media section-----------*/
+/*-- MEDIA SECTION --*/
 
 /* Maintain balanced spacing between videos*/
 
 .embed-responsive {
     width: 85%;
-    align-items: centre;
     margin: 32px;
 }
 
-/* --------------------------Contact Form section-----------*/
+/*-- Contact Form section --*/
 
 form .contact-form-bg {
     background-color: #1d1919;
@@ -335,9 +315,6 @@ form .contact-form-bg {
     font-family: 'Amatic SC', cursive;
     margin-top: -47px;
     margin-bottom: 9px;
-    font-weight: 300px;
-    /*    padding-left: 10px;
-    padding-right: 10px;*/
 }
 
 .contact-form-center {
@@ -347,7 +324,6 @@ form .contact-form-bg {
     margin-right: auto;
     margin-bottom: 80px;
 }
-
 
 button[type="submit"] {
     margin-top: 15px;
@@ -372,12 +348,7 @@ button[type="submit"] {
     padding: 10px;
 }
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-
-/*---------------modify bootstrap email form & Toast (buttons, text, padding etc.) -------*/
+/*-- Modify bootstrap email form & Toast (buttons, text, padding etc.) --*/
 
 .form-control {
     font-weight: 600;
@@ -410,13 +381,6 @@ button:not(:disabled) {
     margin-bottom: 20px;
 }
 
-.col-6,
-.col-4,
-.col-3 {
-    padding: 0;
-    margin: 0;
-}
-
 .toast {
     background-color: rgba(0, 0, 0, 0.4);
     max-width: 700px;
@@ -441,10 +405,6 @@ button:not(:disabled) {
     font-size: 2.5rem;
     color: #f8f9fa;
     opacity: .9;
-}
-
-.section1-backdrop .container {
-    padding: 0;
 }
 
 
@@ -526,7 +486,7 @@ p {
     #section4,
     #section5,
     #section6,
-    /*------Keeps section headings higher in larger screens----*/
+    /*--Keeps section headings higher in larger screens --*/
     #section7,
     #section8 {
         width: 100%;
@@ -615,7 +575,6 @@ p {
 
 }
 
-
 .badge-primary {
     color: #0b0c0c;
     background-color: #d2a50e;
@@ -632,4 +591,3 @@ p {
     font-size: 14px;
 }
 
-/*----------------------------------------------------------------------*/
