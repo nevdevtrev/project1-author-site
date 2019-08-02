@@ -9,13 +9,15 @@ an email subscriber list based on a free book offering when email details are su
 It's designed to be responsive on all devices. 
 
 
-## Technologies
+## Technologies/Languages
 
 1. HTML
 2. Boostrap
 3. Flexbox Grid System
 4. CSS3
 5. JavaScript
+6. Github
+7. AWS Cloud 9
 
 
 ## Design - UX
@@ -57,6 +59,8 @@ A: The new visitor to the site will immediately be presented with two things: fi
    social media links. This gives them an ever-present and quick access to these services. Any section the visitor is currently in is highlighted in the 
    navigation bar too, so as a visual cue or reminder this helps the user know where they are at any time
 
+   All links to external sites, eg. for purchasing books, open in new tabs so that the user doesn't lose his way from the site.
+   
    A collapsible navbar is used for clean presentation on smaller devices, which holds the same functionality as on larger screens in terms of highlighted 
    sections. This gives the visitor the same desktop experience but in a cleaner minimalist way on their mobile.
    
