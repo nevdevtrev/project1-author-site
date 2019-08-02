@@ -57,6 +57,9 @@ A: The new visitor to the site will immediately be presented with two things: fi
    social media links. This gives them an ever-present and quick access to these services. Any section the visitor is currently in is highlighted in the 
    navigation bar too, so as a visual cue or reminder this helps the user know where they are at any time
 
+   A collapsible navbar is used for clean presentation on smaller devices, which holds the same functionality as on larger screens in terms of highlighted 
+   sections. This gives the visitor the same desktop experience but in a cleaner minimalist way on their mobile.
+   
    All input forms are deigned to ensure the user is assisted in completing them correctly. The combined use of required fields, enforced syntax and popup 
    prompts will gently guide the user to complete their task.
 
@@ -114,10 +117,10 @@ losing the authorsite.
 Popover links have been tested so that they appear on top (data-placement="top") and that they close (data-trigger="focus") when clicked 
 outside the element. 
 
-The final layout was tested across multiple devices (using the developer's tool (chrome and firefox)) and on a variety of browsers (Firefox, 
-Internet Explorer, Google chrome, Safari and Opera). Media queries have been used where necessary for various layout tweeks and preferences for larger screens. 
-In some cases these have been used so that certain columns and divs are only visible on larger screens, while in other circumstances they're used for simple 
-formatting variations. 
+The final layout was tested for responsiveness across multiple devices (Pixel 2/ Pixel2 XL / Galaxy S5 / iphone 5/SE / ipad / ipad Pro / 
+iphone 6/7/8 plus and iphone X) and on a variety of browsers (Firefox, Internet Explorer, Google chrome, Safari and Opera). Media queries 
+have been used where necessary for various layout tweeks and preferences for larger screens. In some cases these have been used so that 
+certain columns and divs are only visible on larger screens, while in other circumstances they're used for simple formatting variations. 
 
 
 ## Academic Pedigree
